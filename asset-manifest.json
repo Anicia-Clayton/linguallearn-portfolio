@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/linguallearn-portfolio/static/css/main.4d7926b0.css",
+    "main.js": "/linguallearn-portfolio/static/js/main.71e4889f.js",
+    "index.html": "/linguallearn-portfolio/index.html",
+    "main.4d7926b0.css.map": "/linguallearn-portfolio/static/css/main.4d7926b0.css.map",
+    "main.71e4889f.js.map": "/linguallearn-portfolio/static/js/main.71e4889f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d7926b0.css",
+    "static/js/main.71e4889f.js"
+  ]
+}
