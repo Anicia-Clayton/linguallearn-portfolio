@@ -4,7 +4,7 @@ Cloud-native ML application for multilingual learning with multi-modal practice 
 
 **Tech Stack:** AWS (VPC, EC2, RDS PostgreSQL, Lambda, S3, CloudFront, ALB), Terraform, Python, React, AnkiDeck API
 
-**Live Documentation:** https://YOUR-USERNAME.github.io/linguallearn-portfolio  
+**Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/  
 
 ---
 
