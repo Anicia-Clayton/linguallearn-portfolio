@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/linguallearn-portfolio/static/css/main.4d7926b0.css",
-    "main.js": "/linguallearn-portfolio/static/js/main.71e4889f.js",
+    "main.css": "/linguallearn-portfolio/static/css/main.8016665b.css",
+    "main.js": "/linguallearn-portfolio/static/js/main.c1ab789d.js",
     "index.html": "/linguallearn-portfolio/index.html",
-    "main.4d7926b0.css.map": "/linguallearn-portfolio/static/css/main.4d7926b0.css.map",
-    "main.71e4889f.js.map": "/linguallearn-portfolio/static/js/main.71e4889f.js.map"
+    "main.8016665b.css.map": "/linguallearn-portfolio/static/css/main.8016665b.css.map",
+    "main.c1ab789d.js.map": "/linguallearn-portfolio/static/js/main.c1ab789d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d7926b0.css",
-    "static/js/main.71e4889f.js"
+    "static/css/main.8016665b.css",
+    "static/js/main.c1ab789d.js"
   ]
 }
