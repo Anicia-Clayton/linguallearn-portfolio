@@ -58,4 +58,18 @@ linguallearn-portfolio/                 # Project root
 │   ├── App.jsx                         # Main React component (portfolio site)
 │   ├── index.js                        # React entry point
 │   └── index.css                       # Global styles with Tailwind directives
+|
+├── terraform/                          # Infrastructure as Code (to be added)
+│   ├── main.tf                         # Main Terraform configuration
+│   ├── variables.tf                    # Terraform variables
+│   ├── outputs.tf                      # Terraform outputs
+│   ├── vpc.tf                          # VPC configuration
+│   ├── ec2.tf                          # EC2 instances
+│   ├── rds.tf                          # RDS PostgreSQL
+│   ├── s3.tf                           # S3 buckets (data + video)
+│   ├── cloudfront.tf                   # CloudFront CDN for videos
+│   ├── lambda.tf                       # Lambda functions (ML + API)
+│   ├── alb.tf                          # Application Load Balancer
+│   └── security_groups.tf              # Security group rules
 └── node_modules/                       # Node.js dependencies (gitignored)
+
