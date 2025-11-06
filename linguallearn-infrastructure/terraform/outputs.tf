@@ -17,3 +17,14 @@ output "vpc_id" {
     description = "NAT Gateway public IP"
     value       = aws_eip.nat.public_ip
   }
+
+output "rds_endpoint" {
+    description = "RDS instance endpoint"
+    value       = aws_db_instance.main.endpoint
+    sensitive   = true
+  }
+
+  output "rds_secret_arn" {
+    description = "ARN of RDS credentials secret"
+    value       = aws_secretsmanager_secret.rds_credentials.arn
+  }

@@ -21,3 +21,15 @@ variable "aws_region" {
     type        = string
     default     = "10.0.0.0/16"
   }
+
+variable "db_instance_class" {
+    description = "RDS instance class"
+    type        = string
+    default     = "db.t3.micro"  # Free tier eligible
+  }
+
+  variable "db_allocated_storage" {
+    description = "Allocated storage in GB"
+    type        = number
+    default     = 20
+  }
