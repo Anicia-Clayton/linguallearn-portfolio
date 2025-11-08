@@ -18,8 +18,8 @@
     "autoprefixer": "^10.4.21",
     "gh-pages": "^6.0.0",
     "postcss": "^8.5.6",
-    "react-scripts": "5.0.1",
-    "tailwindcss": "^4.1.16"
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.3.0"
   },
   "browserslist": {
     "production": [
