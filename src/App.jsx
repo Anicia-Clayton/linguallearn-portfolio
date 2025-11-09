@@ -174,7 +174,6 @@ const OverviewSection = () => (
 
     <Section title="Presentation Angle">
       <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
-        <h4 className="font-semibold text-yellow-900 mb-2">Your Story Hook:</h4>
         <p className="text-gray-700 italic mb-3">
           "I've studied 12 languages in my spare time and currently maintain 5. I also tutor kids regularly. 
           The hardest part isn't learning - it's not forgetting while juggling real life. Traditional flashcard apps 
