@@ -185,7 +185,7 @@ const OverviewSection = () => (
           The system assigns my target language to specific people or activities (like 'always think in Spanish when texting Mom'), 
           tracks my practice across all these modalities, and uses ML to predict when I'm about to forget vocabulary. 
           It even supports ASL with video content, because you can't learn signing from text. This is the tool I wish existed 
-          when I started learning languages 12 years ago."
+          when I started learning languages 8 years ago."
         </p>
       </div>
     </Section>
