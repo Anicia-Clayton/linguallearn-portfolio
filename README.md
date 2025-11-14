@@ -4,7 +4,7 @@ Cloud-native ML application for multilingual learning with multi-modal practice 
 
 **Tech Stack:** AWS (VPC, EC2, RDS PostgreSQL, Lambda, S3, CloudFront, ALB), Terraform, Python, React, AnkiDeck API
 
-**Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/  
+**Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/
 
 ---
 
@@ -50,6 +50,17 @@ linguallearn-portfolio/                 # Project root
 ├── tailwind.config.js                  # Tailwind CSS configuration
 ├── postcss.config.js                   # PostCSS configuration
 ├── .gitignore                          # Git ignore rules
+├── .gitattributes                      # Global line-ending policy
+├── .editorconfig                       # For consistent editor settings
+|
+├── docs/                               # Comprehensive documentation
+│   ├── SAD.md                          # Solution Architecture Document
+│   ├── RUNBOOK.md                      # Operations guide
+│   ├── ADR.md                          # Architecture Decision Record
+│   ├── Project_Tracker.xlsx            # Complete Project Tracker
+│   ├── TROUBLESHOOTING.md              # Quick reference guide
+│   └── lessons-learned/                # Detailed troubleshooting stories
+│       ├── ssm-connectivity-troubleshooting.md
 │
 ├── public/                             # Public assets
 │   └── index.html                      # HTML entry point
@@ -58,4 +69,50 @@ linguallearn-portfolio/                 # Project root
 │   ├── App.jsx                         # Main React component (portfolio site)
 │   ├── index.js                        # React entry point
 │   └── index.css                       # Global styles with Tailwind directives
+|
+├── terraform/                          # Infrastructure as Code (to be added)
+│   ├── main.tf                         # Main Terraform configuration
+│   ├── variables.tf                    # Terraform variables
+│   ├── outputs.tf                      # Terraform outputs
+│   ├── vpc.tf                          # VPC configuration
+│   ├── ec2.tf                          # EC2 instances
+│   ├── rds.tf                          # RDS PostgreSQL
+│   ├── s3.tf                           # S3 buckets (data + video)
+│   ├── cloudfront.tf                   # CloudFront CDN for videos
+│   ├── lambda.tf                       # Lambda functions (ML + API)
+│   ├── alb.tf                          # Application Load Balancer
+│   └── security_groups.tf              # Security group rules
+|
 └── node_modules/                       # Node.js dependencies (gitignored)
+
+## Project Documentation
+
+This project includes comprehensive documentation organized by purpose:
+
+### Core Documentation (in /docs/)
+
+- Solution Architecture Document (SAD) - Complete system architecture and design
+- Architecture Decision Records (ADRs) - Key technical decisions with rationale
+
+  - ADR-001: RDS vs DynamoDB for data storage
+  - ADR-002: Lambda for ML inference vs always-on EC2
+  - ADR-003: ALB vs API Gateway
+  - ADR-004: Secrets Manager for credential management
+  - ADR-005: ASL video support implementation
+  - ADR-006: Multi-modal practice tracking approach
+
+- Operational Runbook - Production procedures and incident response
+
+### Development Resources
+
+- Troubleshooting Guide - Quick fixes for common development issues
+
+  - Configuration errors
+  - AWS CLI issues
+  - Git and version control problems
+  - Development environment setup
+
+
+- Lessons Learned - Detailed problem-solving documentation
+
+  - SSM Connectivity Issues
