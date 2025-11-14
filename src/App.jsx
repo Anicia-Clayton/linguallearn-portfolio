@@ -21,18 +21,18 @@ const ADR = ({ number, title, status, context, decision, rationale, consequences
       <h4 className="text-xl font-bold text-gray-900">ADR-{number}: {title}</h4>
       <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full">{status}</span>
     </div>
-
+    
     <div className="space-y-4">
       <div>
         <h5 className="font-semibold text-gray-900 mb-1">Context</h5>
         <p className="text-gray-700 text-sm">{context}</p>
       </div>
-
+      
       <div>
         <h5 className="font-semibold text-gray-900 mb-1">Decision</h5>
         <p className="text-gray-700 text-sm">{decision}</p>
       </div>
-
+      
       <div>
         <h5 className="font-semibold text-gray-900 mb-2">Rationale</h5>
         <ul className="space-y-1">
@@ -41,7 +41,7 @@ const ADR = ({ number, title, status, context, decision, rationale, consequences
           ))}
         </ul>
       </div>
-
+      
       <div>
         <h5 className="font-semibold text-gray-900 mb-2">Consequences</h5>
         <ul className="space-y-1">
@@ -80,18 +80,18 @@ const CostCard = ({ phase, total, items, note }) => (
 const Incident = ({ number, title, symptoms, rootCause, resolution, prevention }) => (
   <div className="bg-white border-2 border-orange-200 rounded-lg p-6 mb-6">
     <h4 className="text-lg font-bold text-gray-900 mb-4">Incident #{number}: {title}</h4>
-
+    
     <div className="space-y-3">
       <div>
         <h5 className="font-semibold text-orange-900 text-sm mb-1">Symptoms</h5>
         <p className="text-sm text-gray-700">{symptoms}</p>
       </div>
-
+      
       <div>
         <h5 className="font-semibold text-orange-900 text-sm mb-1">Root Cause</h5>
         <p className="text-sm text-gray-700">{rootCause}</p>
       </div>
-
+      
       <div>
         <h5 className="font-semibold text-orange-900 text-sm mb-1">Resolution Steps</h5>
         <ol className="space-y-1">
@@ -100,7 +100,7 @@ const Incident = ({ number, title, symptoms, rootCause, resolution, prevention }
           ))}
         </ol>
       </div>
-
+      
       <div>
         <h5 className="font-semibold text-orange-900 text-sm mb-1">Prevention</h5>
         <p className="text-sm text-gray-700">{prevention}</p>
@@ -113,18 +113,18 @@ const OverviewSection = () => (
   <div className="space-y-6">
     <Section title="Problem Statement">
       <p className="text-gray-700 leading-relaxed">
-        Language learners struggle to maintain multiple languages simultaneously due to inefficient study schedules
-        and lack of personalized feedback. Traditional flashcard apps focus on memorization but miss how humans
-        actually learn languages: through context, immersion, and multi-modal practice. Tutors spend excessive time
-        manually tracking student progress across various activities, and learners abandon their studies due to
+        Language learners struggle to maintain multiple languages simultaneously due to inefficient study schedules 
+        and lack of personalized feedback. Traditional flashcard apps focus on memorization but miss how humans 
+        actually learn languages: through context, immersion, and multi-modal practice. Tutors spend excessive time 
+        manually tracking student progress across various activities, and learners abandon their studies due to 
         plateaus they don't see coming.
       </p>
     </Section>
 
     <Section title="Solution">
       <p className="text-gray-700 leading-relaxed mb-4">
-        LinguaLearn AI is a cloud-native ML platform that goes beyond flashcards. It predicts learner retention curves,
-        tracks multi-modal practice activities (journaling, media consumption, conversations), and provides personalized
+        LinguaLearn AI is a cloud-native ML platform that goes beyond flashcards. It predicts learner retention curves, 
+        tracks multi-modal practice activities (journaling, media consumption, conversations), and provides personalized 
         tutor feedback. The system helps learners stay motivated through real-world language use, not just memorization.
       </p>
       <div className="bg-indigo-50 border-l-4 border-indigo-600 p-4 rounded">
@@ -165,8 +165,8 @@ const OverviewSection = () => (
       <div className="mt-4 bg-purple-50 p-4 rounded-lg">
         <h4 className="font-semibold text-purple-900 mb-2">ML, Data & Integration</h4>
         <p className="text-sm text-gray-700">
-          Lambda functions for ML inference, AnkiDeck API integration for vocabulary data, S3 + CloudFront for ASL video content,
-          EventBridge for scheduled tasks, Terraform for IaC, GitHub Actions for CI/CD. Multi-modal practice tracking system
+          Lambda functions for ML inference, AnkiDeck API integration for vocabulary data, S3 + CloudFront for ASL video content, 
+          EventBridge for scheduled tasks, Terraform for IaC, GitHub Actions for CI/CD. Multi-modal practice tracking system 
           captures real-world language use beyond flashcards.
         </p>
       </div>
@@ -175,16 +175,16 @@ const OverviewSection = () => (
     <Section title="Presentation Angle">
       <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
         <p className="text-gray-700 italic mb-3">
-          "I've studied 12 languages in my spare time and currently maintain 5. I also tutor kids regularly.
-          The hardest part isn't learning - it's not forgetting while juggling real life. Traditional flashcard apps
-          missed the point: real language learning happens when you journal in Spanish, watch Korean dramas, or text
+          "I've studied 12 languages in my spare time and currently maintain 5. I also tutor kids regularly. 
+          The hardest part isn't learning - it's not forgetting while juggling real life. Traditional flashcard apps 
+          missed the point: real language learning happens when you journal in Spanish, watch Korean dramas, or text 
           your mom in Haitian Creole."
         </p>
         <p className="text-gray-700 italic">
-          "I built LinguaLearn AI to track how I actually learn - through music, conversations, shows, and daily tasks.
-          The system assigns my target language to specific people or activities (like 'always think in Spanish when texting Mom'),
-          tracks my practice across all these modalities, and uses ML to predict when I'm about to forget vocabulary.
-          It even supports ASL with video content, because you can't learn signing from text. This is the tool I wish existed
+          "I built LinguaLearn AI to track how I actually learn - through music, conversations, shows, and daily tasks. 
+          The system assigns my target language to specific people or activities (like 'always think in Spanish when texting Mom'), 
+          tracks my practice across all these modalities, and uses ML to predict when I'm about to forget vocabulary. 
+          It even supports ASL with video content, because you can't learn signing from text. This is the tool I wish existed 
           when I started learning languages 8 years ago."
         </p>
       </div>
@@ -248,43 +248,43 @@ const SADSection = () => (
 
     <Section title="Component Descriptions">
       <div className="space-y-4">
-        <Component
+        <Component 
           name="VPC (Virtual Private Cloud)"
           description="Isolated network with public and private subnets across 2 Availability Zones for high availability. Public subnet hosts ALB, private subnet hosts EC2 API server and RDS database."
         />
-        <Component
+        <Component 
           name="Application Load Balancer (ALB)"
           description="Distributes incoming HTTPS traffic across EC2 instances. Handles SSL/TLS termination. Enables horizontal scaling when traffic increases."
         />
-        <Component
+        <Component 
           name="EC2 API Server"
           description="Hosts the REST API built with Python (Flask/FastAPI). Handles user authentication, CRUD operations, practice activity logging (journaling, media, conversations), and orchestrates ML predictions via Lambda."
         />
-        <Component
+        <Component 
           name="RDS PostgreSQL"
           description="Relational database storing users, vocabulary cards, practice activities (journaling, media, conversations), language assignments, tutor feedback, and historical predictions. Multi-AZ deployment for failover. Schema includes 12+ tables for multi-modal tracking."
         />
-        <Component
+        <Component 
           name="Lambda Functions"
           description="Serverless compute for ML inference (forgetting curve predictions, churn detection) and AnkiDeck API integration for vocabulary ingestion. Triggered by API requests or EventBridge schedules."
         />
-        <Component
+        <Component 
           name="S3 Data Lake + Video Storage"
           description="Stores raw learning session logs, trained ML models, backup data, and ASL video content (demonstrations, user practice videos). Organized with prefixes: /raw-data, /models, /backups, /videos. CloudFront CDN delivers videos globally with low latency."
         />
-        <Component
+        <Component 
           name="CloudFront CDN"
           description="Content Delivery Network for ASL video streaming. Caches video content at edge locations worldwide, reducing latency and S3 egress costs. Critical for signed language learning experience."
         />
-        <Component
+        <Component 
           name="Secrets Manager"
           description="Secures database credentials, API keys (AnkiDeck, external services), and encryption keys. Integrated with RDS for automatic rotation."
         />
-        <Component
+        <Component 
           name="CloudWatch"
           description="Centralized logging and monitoring. Tracks API latency, error rates, Lambda invocations, video streaming metrics, and custom ML accuracy metrics."
         />
-        <Component
+        <Component 
           name="EventBridge"
           description="Schedules nightly ML model retraining jobs, daily prediction batches, and AnkiDeck API sync for vocabulary updates."
         />
@@ -312,7 +312,7 @@ const SADSection = () => (
           <li>• Lambda: minimal concurrent executions</li>
           <li>• CloudFront: low bandwidth</li>
         </ul>
-
+        
         <h4 className="font-semibold text-blue-900 mt-4 mb-3">10x Traffic: ~1,000 concurrent users</h4>
         <ul className="space-y-2 text-gray-700">
           <li>• <strong>EC2:</strong> Auto-scaling group with 3-5 t3.medium instances behind ALB</li>
@@ -561,23 +561,23 @@ const SecuritySection = () => (
       <div className="bg-green-50 p-4 rounded-lg">
         <h4 className="font-semibold text-green-900 mb-3">How do you control access?</h4>
         <p className="text-gray-700 mb-4">
-          "I implemented RBAC using IAM roles with least privilege. Each component has exactly the permissions
-          it needs - EC2 can't access Lambda execution roles, Lambda can only read specific S3 prefixes.
+          "I implemented RBAC using IAM roles with least privilege. Each component has exactly the permissions 
+          it needs - EC2 can't access Lambda execution roles, Lambda can only read specific S3 prefixes. 
           No service accounts, no hardcoded keys. External API keys stored in Secrets Manager with quarterly rotation."
         </p>
-
+        
         <h4 className="font-semibold text-green-900 mb-3">Who can do what?</h4>
         <p className="text-gray-700 mb-4">
-          "End users authenticate via JWT tokens with 24-hour expiration. Tutors have elevated permissions to
-          view student progress and provide feedback. Admins can retrain models and access audit logs. Everything
+          "End users authenticate via JWT tokens with 24-hour expiration. Tutors have elevated permissions to 
+          view student progress and provide feedback. Admins can retrain models and access audit logs. Everything 
           is logged to CloudWatch with role-based filtering."
         </p>
-
+        
         <h4 className="font-semibold text-green-900 mb-3">How is data protected?</h4>
         <p className="text-gray-700">
-          "Encryption everywhere: TLS 1.2+ in transit, AES-256 at rest for RDS and S3. Secrets automatically rotate
-          every 90 days. Private subnets have no internet access. Video content served via CloudFront with signed URLs
-          to prevent unauthorized access. I can demonstrate this by showing the security group rules and encryption
+          "Encryption everywhere: TLS 1.2+ in transit, AES-256 at rest for RDS and S3. Secrets automatically rotate 
+          every 90 days. Private subnets have no internet access. Video content served via CloudFront with signed URLs 
+          to prevent unauthorized access. I can demonstrate this by showing the security group rules and encryption 
           settings in the Terraform code."
         </p>
       </div>
@@ -605,7 +605,7 @@ const CostSection = () => (
             { service: "Data Transfer", cost: "$10-20" }
           ]}
         />
-
+        
         <CostCard
           phase="Production (Portfolio Mode)"
           total="$40-80"
@@ -660,7 +660,7 @@ const CostSection = () => (
           </div>
         </div>
         <p className="text-sm text-gray-600 mt-3">
-          Note: Video delivery is the largest variable cost. Compression and CloudFront caching reduce costs by ~60%.
+          Note: Video delivery is the largest variable cost. Compression and CloudFront caching reduce costs by ~60%. 
           Still affordable for a production app serving 1,000 users. Could reduce by 30-40% with Reserved Instances.
         </p>
       </div>
@@ -700,7 +700,7 @@ const CostSection = () => (
           </div>
         </div>
         <p className="text-sm text-gray-600 mt-3 font-semibold">
-          Overall: Azure would cost approximately 8-12% less for this architecture at portfolio scale,
+          Overall: Azure would cost approximately 8-12% less for this architecture at portfolio scale, 
           primarily due to cheaper CDN and storage costs for video delivery.
         </p>
       </div>
@@ -718,7 +718,7 @@ const CostSection = () => (
             <li>• Set CloudWatch billing alarms at $50, $100, $150 thresholds</li>
           </ul>
         </div>
-
+        
         <div className="bg-gray-50 p-3 rounded">
           <h5 className="font-semibold text-gray-900">Interview/Demo Phase</h5>
           <ul className="text-sm text-gray-700 mt-2 space-y-1">
@@ -728,7 +728,7 @@ const CostSection = () => (
             <li>• Limit ASL video library to 20-30 clips during demo phase</li>
           </ul>
         </div>
-
+        
         <div className="bg-gray-50 p-3 rounded">
           <h5 className="font-semibold text-gray-900">Production Scaling</h5>
           <ul className="text-sm text-gray-700 mt-2 space-y-1">
