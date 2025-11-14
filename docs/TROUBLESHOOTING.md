@@ -152,6 +152,9 @@ wsl aws ec2 describe-instances --query "Reservations[0].Instances[0].State"
 
 ## Git & Version Control
 
+### Nested Git Repository Issues
+See [Lessons Learned: Git Repository Restructure](docs/lessons-learned/git-nested-repo-conflict.md) for detailed walkthrough of resolving accidental nested repos with diverged branches.
+
 ### Large Files in Git History
 
 **Issue:** Accidentally committed large files (e.g., terraform.tfstate) causing slow clones

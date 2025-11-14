@@ -40,6 +40,38 @@ I've studied 12 languages (Spanish, Portuguese, Swahili, Romanian, Mandarin, Hau
 
 ---
 
+## Project Documentation
+
+This project includes comprehensive documentation organized by purpose:
+
+### Core Documentation (in /docs/)
+
+- Solution Architecture Document (SAD) - Complete system architecture and design
+- Architecture Decision Records (ADRs) - Key technical decisions with rationale
+
+  - ADR-001: RDS vs DynamoDB for data storage
+  - ADR-002: Lambda for ML inference vs always-on EC2
+  - ADR-003: ALB vs API Gateway
+  - ADR-004: Secrets Manager for credential management
+  - ADR-005: ASL video support implementation
+  - ADR-006: Multi-modal practice tracking approach
+
+- Operational Runbook - Production procedures and incident response
+
+### Development Resources
+
+- Troubleshooting Guide - Quick fixes for common development issues
+
+  - Configuration errors
+  - AWS CLI issues
+  - Git and version control problems
+  - Development environment setup
+
+
+- Lessons Learned - Detailed problem-solving documentation
+
+  - SSM Connectivity Issues
+
 ## Project Structure
 
 ```
@@ -84,35 +116,3 @@ linguallearn-portfolio/                 # Project root
 │   └── security_groups.tf              # Security group rules
 |
 └── node_modules/                       # Node.js dependencies (gitignored)
-
-## Project Documentation
-
-This project includes comprehensive documentation organized by purpose:
-
-### Core Documentation (in /docs/)
-
-- Solution Architecture Document (SAD) - Complete system architecture and design
-- Architecture Decision Records (ADRs) - Key technical decisions with rationale
-
-  - ADR-001: RDS vs DynamoDB for data storage
-  - ADR-002: Lambda for ML inference vs always-on EC2
-  - ADR-003: ALB vs API Gateway
-  - ADR-004: Secrets Manager for credential management
-  - ADR-005: ASL video support implementation
-  - ADR-006: Multi-modal practice tracking approach
-
-- Operational Runbook - Production procedures and incident response
-
-### Development Resources
-
-- Troubleshooting Guide - Quick fixes for common development issues
-
-  - Configuration errors
-  - AWS CLI issues
-  - Git and version control problems
-  - Development environment setup
-
-
-- Lessons Learned - Detailed problem-solving documentation
-
-  - SSM Connectivity Issues
