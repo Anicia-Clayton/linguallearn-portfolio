@@ -4,7 +4,7 @@ Cloud-native ML application for multilingual learning with multi-modal practice 
 
 **Tech Stack:** AWS (VPC, EC2, RDS PostgreSQL, Lambda, S3, CloudFront, ALB), Terraform, Python, React, AnkiDeck API
 
-**Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/  
+**Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/
 
 ---
 
@@ -50,6 +50,17 @@ linguallearn-portfolio/                 # Project root
 ├── tailwind.config.js                  # Tailwind CSS configuration
 ├── postcss.config.js                   # PostCSS configuration
 ├── .gitignore                          # Git ignore rules
+├── .gitattributes                      # Global line-ending policy
+├── .editorconfig                       # For consistent editor settings
+|
+├── docs/                               # Comprehensive documentation
+│   ├── SAD.md                          # Solution Architecture Document
+│   ├── RUNBOOK.md                      # Operations guide
+│   ├── ADR.md                          # Architecture Decision Record
+│   ├── Project_Tracker.xlsx            # Complete Project Tracker
+│   ├── TROUBLESHOOTING.md              # Quick reference guide
+│   └── lessons-learned/                # Detailed troubleshooting stories
+│       ├── ssm-connectivity-troubleshooting.md
 │
 ├── public/                             # Public assets
 │   └── index.html                      # HTML entry point
@@ -71,5 +82,5 @@ linguallearn-portfolio/                 # Project root
 │   ├── lambda.tf                       # Lambda functions (ML + API)
 │   ├── alb.tf                          # Application Load Balancer
 │   └── security_groups.tf              # Security group rules
+|
 └── node_modules/                       # Node.js dependencies (gitignored)
-
