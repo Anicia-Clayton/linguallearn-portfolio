@@ -176,6 +176,177 @@ git filter-branch --tree-filter 'rm -f terraform.tfstate' HEAD
 git push --force
 ```
 
+
+## AWS Systems Manager (SSM)
+
+### Session Manager Plugin Not Found
+
+**Error:**
+```
+SessionManagerPlugin is not found. Please refer to SessionManager Documentation here:
+http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found
+```
+
+**Root Cause:** The AWS CLI requires a separate Session Manager plugin to handle SSM connections. It's not included by default with the AWS CLI installation.
+
+**Solution:**
+
+**For Windows:**
+1. Download the installer:
+   - [Session Manager Plugin (64-bit)](https://s3.amazonaws.com/session-manager-downloads/plugin/latest/windows/SessionManagerPluginSetup.exe)
+
+2. Run the installer (double-click the .exe file)
+
+3. **Close and reopen CMD** (PATH needs to refresh)
+
+4. Verify installation:
+```cmd
+session-manager-plugin
+```
+
+**If plugin still not recognized after reopening CMD:**
+```cmd
+# Add to PATH temporarily
+set PATH=%PATH%;C:\Program Files\Amazon\SessionManagerPlugin\bin
+
+# Or add permanently via System Environment Variables
+```
+
+**Then test SSM connection:**
+```cmd
+aws ssm start-session --target i-YOUR-INSTANCE-ID
+```
+
+---
+
+### AWS CLI and jq Not Found on EC2 Instance
+
+**Error (when SSHed into EC2):**
+```bash
+sh: 1: aws: not found
+sh: 3: jq: not found
+```
+
+**Root Cause:** You're connected to the EC2 instance via SSM, and the AWS CLI and `jq` utility aren't installed yet. This is expected if your user_data script hasn't run or failed.
+
+**Solution:**
+
+**Check if user_data script ran:**
+```bash
+sudo cat /var/log/cloud-init-output.log | tail -50
+```
+
+**Install manually (quick fix):**
+```bash
+# Update package manager
+sudo apt update
+
+# Install AWS CLI
+sudo apt install awscli -y
+
+# Install jq (JSON parser)
+sudo apt install jq -y
+```
+
+**Verify installation:**
+```bash
+aws --version
+jq --version
+```
+
+**Test Secrets Manager access:**
+```bash
+aws secretsmanager get-secret-value \
+  --secret-id linguallearn-rds-credentials-dev \
+  --region us-east-1 \
+  --query SecretString --output text | jq .
+```
+
+**Note:** If the command returns nothing, ensure the EC2 IAM role has `SecretsManagerReadWrite` permissions.
+
+---
+
+### S3 Access Denied (403 Forbidden) from EC2
+
+**Error:**
+```bash
+aws s3 cp s3://bucket-name/file.sql /home/ubuntu/file.sql
+fatal error: An error occurred (403) when calling the HeadObject operation: Forbidden
+```
+
+**Context:** When uploading a large database schema file (428 lines) to EC2 for execution against RDS, the most reliable method is to use S3 as a transfer point rather than copy/paste or SCP (which requires SSH keys). However, EC2 instances need explicit S3 permissions.
+
+**Root Cause:** The EC2 instance's IAM role doesn't have permissions to read from S3 buckets.
+
+**Solution:**
+
+**Step 1: Identify the IAM role attached to your EC2 instance**
+
+From your local machine:
+```bash
+# Get instance profile ARN
+aws ec2 describe-instances \
+  --instance-ids i-YOUR-INSTANCE-ID \
+  --query "Reservations[0].Instances[0].IamInstanceProfile.Arn" \
+  --output text
+
+# Extract the actual role name from the instance profile
+aws iam get-instance-profile \
+  --instance-profile-name YOUR-INSTANCE-PROFILE-NAME \
+  --query "InstanceProfile.Roles[0].RoleName" \
+  --output text
+```
+
+**Example output:**
+```
+Instance Profile: linguallearn-ec2-profile-dev
+Role Name: linguallearn-ec2-role-dev
+```
+
+**Step 2: Attach S3 read permissions to the role**
+
+```bash
+aws iam attach-role-policy \
+  --role-name linguallearn-ec2-role-dev \
+  --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+```
+
+**Note:** Use the **role name**, not the instance profile name.
+
+**Step 3: Wait 30 seconds for permissions to propagate**
+
+IAM policy changes can take 10-30 seconds to take effect.
+
+**Step 4: Retry the S3 copy command**
+
+```bash
+aws s3 cp s3://bucket-name/file.sql /tmp/file.sql
+```
+
+You should now see:
+```
+download: s3://bucket-name/file.sql to ./file.sql
+```
+
+**Best Practice - Add S3 Permissions in Terraform:**
+
+To prevent this issue in the future, add S3 permissions to your EC2 IAM role in `terraform/iam.tf`:
+
+```hcl
+resource "aws_iam_role_policy_attachment" "ec2_s3_read" {
+  role       = aws_iam_role.ec2_role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+}
+```
+
+**Use Case:** This is particularly useful when:
+- Uploading large SQL schema files (100+ lines) to EC2
+- Transferring configuration files or scripts from local to EC2
+- Downloading application code or dependencies from S3 to EC2
+- EC2 needs to access data stored in S3 buckets
+
+**Cost Impact:** Negligible. S3 reads cost ~$0.0004 per 1,000 requests.
+
 ---
 
 ## Development Environment
