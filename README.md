@@ -36,6 +36,18 @@ I've studied 12 languages (Spanish, Portuguese, Swahili, Romanian, Mandarin, Hau
 - **Infrastructure-as-Code** using Terraform with modular design for AWS → Azure portability
 - **Comprehensive documentation:** Solution Architecture Document (SAD), 6 Architecture Decision Records (ADRs), operational runbook with 5 incident scenarios
 
+### Project Tracker
+
+Comprehensive Excel-based tracker managing all 6 development phases with automated progress monitoring.
+
+**Location:** docs/PROJECT_TRACKER.xlsx
+
+**Features:**
+- Auto-calculated completion percentages
+- Color-coded status indicators
+- Real-time task counts and blocker tracking
+- Full project timeline and change log
+
 **Current Phase:** Infrastructure & API development (Phase 2 of 6)
 
 ---
@@ -71,11 +83,13 @@ This project includes comprehensive documentation organized by purpose:
 - Lessons Learned - Detailed problem-solving documentation
 
   - SSM Connectivity Issues
+  - Git Sync Issues (nested repo)
 
 ## Project Structure
 
 ```
 linguallearn-portfolio/                 # Project root
+|
 ├── README.md                           # This file
 ├── package.json                        # Node.js dependencies
 ├── package-lock.json                   # Locked dependency versions
@@ -92,7 +106,8 @@ linguallearn-portfolio/                 # Project root
 │   ├── Project_Tracker.xlsx            # Complete Project Tracker
 │   ├── TROUBLESHOOTING.md              # Quick reference guide
 │   └── lessons-learned/                # Detailed troubleshooting stories
-│       ├── ssm-connectivity-troubleshooting.md
+│       ├── ssm-connectivity.md
+│       ├── git-nested-repo.md
 │
 ├── public/                             # Public assets
 │   └── index.html                      # HTML entry point
