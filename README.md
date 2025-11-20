@@ -98,6 +98,7 @@ linguallearn-portfolio/                 # Project root
 ├── .gitignore                          # Git ignore rules
 ├── .gitattributes                      # Global line-ending policy
 ├── .editorconfig                       # For consistent editor settings
+├── requirements.txt                    # Python dependencies
 |
 ├── docs/                               # Comprehensive documentation
 │   ├── SAD.md                          # Solution Architecture Document
@@ -117,7 +118,7 @@ linguallearn-portfolio/                 # Project root
 │   ├── index.js                        # React entry point
 │   └── index.css                       # Global styles with Tailwind directives
 |
-├── terraform/                          # Infrastructure as Code (to be added)
+├── terraform/                          # Infrastructure as Code
 │   ├── main.tf                         # Main Terraform configuration
 │   ├── variables.tf                    # Terraform variables
 │   ├── outputs.tf                      # Terraform outputs
@@ -129,5 +130,24 @@ linguallearn-portfolio/                 # Project root
 │   ├── lambda.tf                       # Lambda functions (ML + API)
 │   ├── alb.tf                          # Application Load Balancer
 │   └── security_groups.tf              # Security group rules
+│   └── ssm_endpoints.tf                # SSM Endpoints
+│   └── secrets.tf                      # Secrets Manager
+│   └── route53.tf                      # DNS Records
+│   └── certificate.tf                  # SSL Certificate
+│   └── cloudwatch.tf                   # CloudWatch Logs
+│
+├── api/                                # Backend API
+│   ├── app.py                          # Flask/FastAPI application
+│   ├── models/                         # ML models
+│   │   ├── forgetting_curve.py         # Forgetting curve prediction model
+│   │   └── churn_detection.py          # Churn detection model
+│   ├── routes/                         # API routes
+│   │   ├── users.py                    # User management endpoints
+│   │   ├── vocabulary.py               # Vocabulary CRUD endpoints
+│   │   ├── practice.py                 # Practice activity tracking
+│   │   └── predictions.py              # ML prediction endpoints
+│   └── utils/                          # Utility functions
+│       ├── ankideck_client.py          # AnkiDeck API integration
+│       └── db_connection.py            # Database connection pooling
 |
 └── node_modules/                       # Node.js dependencies (gitignored)
