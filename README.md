@@ -149,5 +149,8 @@ linguallearn-portfolio/                 # Project root
 │   └── utils/                          # Utility functions
 │       ├── ankideck_client.py          # AnkiDeck API integration
 │       └── db_connection.py            # Database connection pooling
+│
+├── tests/                              # Test scripts
+│   ├── test_api.sh                     # Comprehensive API Testing
 |
 └── node_modules/                       # Node.js dependencies (gitignored)
