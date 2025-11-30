@@ -1,4 +1,4 @@
-# DNS Record: api.yourdomain.com -> ALB
+# DNS Record: api.linguallearn.org -> ALB
 resource "aws_route53_record" "api" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "${var.api_subdomain}.${var.domain_name}"

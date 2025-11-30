@@ -131,10 +131,13 @@ linguallearn-portfolio/                 # Project root
 │   ├── alb.tf                          # Application Load Balancer
 │   └── security_groups.tf              # Security group rules
 │   └── ssm_endpoints.tf                # SSM Endpoints
+│   └── user_data.sh                    # Infrastructure Script
 │   └── secrets.tf                      # Secrets Manager
 │   └── route53.tf                      # DNS Records
 │   └── certificate.tf                  # SSL Certificate
 │   └── cloudwatch.tf                   # CloudWatch Logs
+│   └── s3.tf                           # S3 Buckets: Data Lake & Video Storage
+│   └── cloudfront.tf                   # CloudFront for Content Delivery
 │
 ├── api/                                # Backend API
 │   ├── app.py                          # Flask/FastAPI application
@@ -152,5 +155,8 @@ linguallearn-portfolio/                 # Project root
 │
 ├── tests/                              # Test scripts
 │   ├── test_api.sh                     # Comprehensive API Testing
+│
+├── scripts/                            # Operational scripts
+│   ├── download_upload_asl_videos.sh   # Download ASL demo videos & Upload to S3 bucket
 |
 └── node_modules/                       # Node.js dependencies (gitignored)
