@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import health, users, vocabulary
+from api.routes import health, users, vocabulary, practice
 
 app = FastAPI(
     title="LinguaLearn AI API",
@@ -21,6 +21,7 @@ app.add_middleware(
 app.include_router(health.router, prefix="/api", tags=["health"])
 app.include_router(users.router, prefix="/api", tags=["users"])
 app.include_router(vocabulary.router, prefix="/api", tags=["vocabulary"])
+app.include_router(practice.router, prefix="/api", tags=["practice"])
 
 @app.on_event("startup")
 async def startup_event():
