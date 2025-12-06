@@ -159,4 +159,8 @@ linguallearn-portfolio/                 # Project root
 ├── scripts/                            # Operational scripts
 │   ├── download_upload_asl_videos.sh   # Download ASL demo videos & Upload to S3 bucket
 |
+├── lambda/                             # Lambda functions
+│   ├── video_processor/                # ASL video processor
+│   │   ├── handler.py                  # Serverless, Event-Driven video processing
+|
 └── node_modules/                       # Node.js dependencies (gitignored)

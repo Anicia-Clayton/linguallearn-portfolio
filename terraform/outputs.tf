@@ -33,7 +33,7 @@ output "rds_secret_arn" {
 # S3 video storage Outputs
 output "video_bucket_name" {
   description = "S3 bucket name for videos"
-  value       = aws_s3_bucket.videos.id
+  value       = aws_s3_bucket.video_storage.id
 }
 
 output "data_lake_bucket_name" {

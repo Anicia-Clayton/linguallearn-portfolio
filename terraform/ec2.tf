@@ -1,6 +1,7 @@
 # Create EC2 instance in private subnet
 resource "aws_instance" "api_server" {
-  ami           = data.aws_ami.ubuntu.id
+  # update later back to ami           = data.aws_ami.ubuntu.id & uncomment  Data source for latest Ubuntu AMI
+  ami = "ami-00b13f11600160c10"  # Pin to current working AMI
   instance_type = "t3.small"
   subnet_id     = aws_subnet.private[0].id
 
@@ -22,15 +23,15 @@ resource "aws_instance" "api_server" {
 }
 
 # Data source for latest Ubuntu AMI
-data "aws_ami" "ubuntu" {
-  most_recent = true
-  owners      = ["099720109477"] # Canonical
+#data "aws_ami" "ubuntu" {
+#  most_recent = true
+#  owners      = ["099720109477"] # Canonical
 
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
-  }
-}
+#  filter {
+#    name   = "name"
+#    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+#  }
+#}
 
 # IAM Role for EC2
 resource "aws_iam_role" "ec2_role" {
