@@ -67,6 +67,7 @@ This project includes comprehensive documentation organized by purpose:
   - ADR-004: Secrets Manager for credential management
   - ADR-005: ASL video support implementation
   - ADR-006: Multi-modal practice tracking approach
+  - ADR-007: SSL Certificate Domain Strategy
 
 - Operational Runbook - Production procedures and incident response
 
@@ -78,7 +79,7 @@ This project includes comprehensive documentation organized by purpose:
   - AWS CLI issues
   - Git and version control problems
   - Development environment setup
-
+  - Authentification out of sync
 
 - Lessons Learned - Detailed problem-solving documentation
 
@@ -99,6 +100,7 @@ linguallearn-portfolio/                 # Project root
 ├── .gitattributes                      # Global line-ending policy
 ├── .editorconfig                       # For consistent editor settings
 ├── requirements.txt                    # Python dependencies
+├── curl-format.txt                     # Curl Command Format
 |
 ├── docs/                               # Comprehensive documentation
 │   ├── SAD.md                          # Solution Architecture Document
@@ -148,6 +150,7 @@ linguallearn-portfolio/                 # Project root
 │   │   ├── users.py                    # User management endpoints
 │   │   ├── vocabulary.py               # Vocabulary CRUD endpoints
 │   │   ├── practice.py                 # Practice activity tracking
+│   │   ├── asl_vocabulary.py           # ASL vocabulary CRUD endpoints
 │   │   └── predictions.py              # ML prediction endpoints
 │   └── utils/                          # Utility functions
 │       ├── ankideck_client.py          # AnkiDeck API integration
@@ -155,6 +158,9 @@ linguallearn-portfolio/                 # Project root
 │
 ├── tests/                              # Test scripts
 │   ├── test_api.sh                     # Comprehensive API Testing
+│   ├── test_practice_api.py            # Comprehensive Practice API Testing
+│   ├── test_asl_api.py                 # Comprehensive ASL API Testing
+│   ├── requirements-test.txt           # Python dependencies
 │
 ├── scripts/                            # Operational scripts
 │   ├── download_upload_asl_videos.sh   # Download ASL demo videos & Upload to S3 bucket

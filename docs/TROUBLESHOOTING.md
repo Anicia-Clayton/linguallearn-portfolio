@@ -373,6 +373,69 @@ venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
+## RDS Password Authentication Failures After Password Reset
+
+**Symptoms:**
+- API service fails to start with `psycopg2.OperationalError: password authentication failed`
+- Password displays differently in different AWS CLI commands
+- Connection works in psql but API still fails
+
+**Root Cause:**
+1. **Password encoding issues**: Complex passwords with special characters (e.g., `<`, `>`, `!`) get Unicode-escaped in JSON (`\u003c`) causing mismatches between displayed and actual values
+2. **Stale connection pools**: API service caches database connections; restarting doesn't always clear the old connections with old passwords
+3. **Secrets Manager sync lag**: RDS password reset doesn't automatically update AWS Secrets Manager
+
+**Solution:**
+
+### Quick Fix (Recommended for Development):
+Use a simple password without special characters:
+```bash
+# CMD: Reset RDS password
+aws rds modify-db-instance --db-instance-identifier linguallearn-db-dev --region us-east-1 --master-user-password "TempPassword2025" --apply-immediately
+
+# CMD: Wait 2-3 minutes, verify status is 'available'
+aws rds describe-db-instances --db-instance-identifier linguallearn-db-dev --region us-east-1 --query "DBInstances[0].DBInstanceStatus" --output text
+
+# CMD: Update Secrets Manager to match
+aws secretsmanager update-secret --secret-id linguallearn-db-password-dev --region us-east-1 --secret-string "{\"username\":\"postgres\",\"password\":\"TempPassword2025\",\"host\":\"linguallearn-db-dev.cen4mk6u4h0n.us-east-1.rds.amazonaws.com\",\"port\":5432,\"dbname\":\"linguallearn\"}"
+
+# Session Manager: Force complete API restart
+sudo systemctl stop linguallearn-api
+sudo pkill -f uvicorn
+sleep 5
+sudo systemctl start linguallearn-api
+sudo systemctl status linguallearn-api
+```
+
+### Verification Steps:
+
+1. **Confirm Secrets Manager updated:**
+```bash
+   aws secretsmanager get-secret-value --secret-id linguallearn-db-password-dev --region us-east-1 --query SecretString --output text
+```
+
+2. **Test database connection manually:**
+```bash
+   psql -h linguallearn-db-dev.cen4mk6u4h0n.us-east-1.rds.amazonaws.com -U postgres -d linguallearn
+   # Password: TempPassword2025
+```
+
+3. **Check API logs for confirmation:**
+```bash
+   sudo journalctl -u linguallearn-api -n 50 --no-pager
+```
+
+**Prevention:**
+- Use simple passwords (letters + numbers only) during development
+- Always update Secrets Manager immediately after resetting RDS password
+- Do a full stop → kill → wait → start cycle when changing database credentials
+- Consider using AWS Secrets Manager rotation to keep passwords in sync automatically
+
+**Related Issues:**
+- Special characters in passwords: `<`, `>`, `!`, `{`, `}`, `\` can cause encoding problems
+- Connection pool caching: Service restart doesn't always clear cached connections
+- Unicode escape sequences: `\u003c` (JSON) vs `<` (actual character)
+
 ---
 
 ## Quick Reference: Common Commands
