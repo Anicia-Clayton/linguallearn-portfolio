@@ -438,6 +438,94 @@ sudo systemctl status linguallearn-api
 
 ---
 
+## Scikit-learn Feature Name Warnings During Model Predictions
+
+**Symptoms:**
+- Warning appears during model predictions: `UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names`
+- Warning repeats for every prediction
+- Predictions still work correctly but logs are cluttered
+
+**Root Cause:**
+- Model was trained using pandas DataFrame with column names (`days_since_last_review`, `review_count`, `difficulty_score`)
+- Predictions were made using numpy arrays without column names
+- Scikit-learn (v1.0+) enforces consistency between training and prediction input formats
+
+**Solution:**
+
+### Option 1: Use DataFrame for Predictions (Recommended)
+
+Update `predict_recall_probability()` in `api/models/forgetting_curve.py`:
+```python
+def predict_recall_probability(self, days_since_review, review_count, difficulty_score):
+    """Predict probability of successful recall"""
+    if self.model is None:
+        return np.exp(-self.default_decay_rate * days_since_review)
+
+    # Use DataFrame with proper column names (matches training data)
+    features = pd.DataFrame({
+        'days_since_last_review': [days_since_review],
+        'review_count': [review_count],
+        'difficulty_score': [difficulty_score]
+    })
+
+    prediction = self.model.predict(features)[0]
+    return max(0.0, min(1.0, prediction))
+```
+
+**Benefits:**
+- Eliminates warnings
+- More explicit and readable
+- Prevents column order mistakes
+- Industry best practice
+
+### Option 2: Suppress Warning (Quick Fix)
+
+Add to top of `api/models/forgetting_curve.py`:
+```python
+import warnings
+warnings.filterwarnings('ignore', message='X does not have valid feature names')
+```
+
+**Benefits:**
+- Fastest solution (30 seconds)
+- Useful for prototyping/testing
+- Predictions still work correctly
+
+**Trade-offs:**
+- Hides the underlying issue
+- Not recommended for production code
+
+### Option 3: Train Without Column Names
+
+Change training to use numpy arrays:
+```python
+def train(self, learning_sessions_data):
+    X = learning_sessions_data[['days_since_last_review', 'review_count', 'difficulty_score']].values
+    y = learning_sessions_data['successful_recall'].values
+
+    self.model = LinearRegression()
+    self.model.fit(X, y)
+    return self.model.score(X, y)
+```
+
+**Benefits:**
+- Slightly faster predictions (~0.004ms difference)
+- Consistency between training and prediction
+
+**Trade-offs:**
+- Less readable code
+- Harder to debug column order issues
+
+**Recommendation:**
+Use **Option 1** (DataFrame for predictions) for portfolio and production code. It's the cleanest, most maintainable solution and follows scikit-learn best practices.
+
+**Prevention:**
+Always use the same data structure (DataFrame or numpy array) for both training and prediction to maintain consistency.
+
+**Related Issues:**
+- Column name mismatches: Ensure training column names exactly match prediction DataFrame columns
+- Column order errors: DataFrames prevent this; numpy arrays are position-dependent
+
 ## Quick Reference: Common Commands
 
 ### Terraform

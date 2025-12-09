@@ -146,6 +146,7 @@ linguallearn-portfolio/                 # Project root
 │   ├── models/                         # ML models
 │   │   ├── forgetting_curve.py         # Forgetting curve prediction model
 │   │   └── churn_detection.py          # Churn detection model
+│   │   └── requirements-ml.txt       # Python dependencies
 │   ├── routes/                         # API routes
 │   │   ├── users.py                    # User management endpoints
 │   │   ├── vocabulary.py               # Vocabulary CRUD endpoints
@@ -164,6 +165,7 @@ linguallearn-portfolio/                 # Project root
 │
 ├── scripts/                            # Operational scripts
 │   ├── download_upload_asl_videos.sh   # Download ASL demo videos & Upload to S3 bucket
+│   ├── train_model.py                  # Train Forgetting Curve Model
 |
 ├── lambda/                             # Lambda functions
 │   ├── video_processor/                # ASL video processor
