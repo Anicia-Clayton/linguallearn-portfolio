@@ -69,14 +69,40 @@ class ForgettingCurveModel:
             return 0  # Review today!
 
     # Save model to pickle file for deployment
+
+    #def save(self, filepath):
+    #    """Save model to pickle file"""
+    #    with open(filepath, 'wb') as f:
+    #        pickle.dump(self, f)
+
+    # Load model from pickle file
+
+    #@staticmethod
+    #def load(filepath):
+    #    """Load model from pickle file"""
+    #    with open(filepath, 'rb') as f:
+    #        return pickle.load(f)
+
+    # Save just the trained sklearn model instead of the entire instance class to address: "pickle can't find api module"
     def save(self, filepath):
         """Save model to pickle file"""
         with open(filepath, 'wb') as f:
-            pickle.dump(self, f)
+            # Save only the sklearn model and decay rate, not the entire class
+            pickle.dump({
+                'sklearn_model': self.model,
+                'decay_rate': self.default_decay_rate
+            }, f)
 
-    # Load model from pickle file (used in Lambda)
+    # Load model from pickle file
     @staticmethod
     def load(filepath):
         """Load model from pickle file"""
         with open(filepath, 'rb') as f:
-            return pickle.load(f)
+            data = pickle.load(f)
+
+            # Reconstruct the ForgettingCurveModel
+            instance = ForgettingCurveModel()
+            instance.model = data['sklearn_model']
+            instance.default_decay_rate = data['decay_rate']
+
+        return instance

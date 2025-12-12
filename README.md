@@ -80,6 +80,7 @@ This project includes comprehensive documentation organized by purpose:
   - Git and version control problems
   - Development environment setup
   - Authentification out of sync
+  - Sckit-Learn Warnings
 
 - Lessons Learned - Detailed problem-solving documentation
 
@@ -146,7 +147,7 @@ linguallearn-portfolio/                 # Project root
 │   ├── models/                         # ML models
 │   │   ├── forgetting_curve.py         # Forgetting curve prediction model
 │   │   └── churn_detection.py          # Churn detection model
-│   │   └── requirements-ml.txt       # Python dependencies
+│   │   └── requirements-ml.txt         # Python dependencies
 │   ├── routes/                         # API routes
 │   │   ├── users.py                    # User management endpoints
 │   │   ├── vocabulary.py               # Vocabulary CRUD endpoints

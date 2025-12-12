@@ -80,3 +80,52 @@ resource "aws_s3_bucket_notification" "video_upload" {
 
   depends_on = [aws_lambda_permission.allow_s3]
 }
+
+# Complete scikit-learn layer (optimized to fit under 250MB)
+resource "aws_lambda_layer_version" "sklearn_complete" {
+  layer_name          = "${var.project_name}-sklearn-complete-${var.environment}"
+  s3_bucket           = aws_s3_bucket.data_lake.id
+  s3_key              = "lambda/ml_layer_complete.zip"
+  compatible_runtimes = ["python3.11"]
+  description         = "Scikit-learn with numpy, scipy (optimized)"
+}
+
+# Lambda function uses complete sklearn layer
+resource "aws_lambda_function" "ml_inference" {
+  s3_bucket     = aws_s3_bucket.data_lake.id
+  s3_key        = "lambda/ml_inference.zip"
+  function_name = "${var.project_name}-ml-inference-${var.environment}"
+  role          = aws_iam_role.lambda_exec.arn
+  handler       = "handler.lambda_handler"
+  runtime       = "python3.11"
+  timeout       = 60
+  memory_size   = 512
+
+  # Use single optimized layer
+  layers = [aws_lambda_layer_version.sklearn_complete.arn]
+
+  environment {
+    variables = {
+      MODEL_BUCKET = aws_s3_bucket.data_lake.id
+    }
+  }
+}
+
+# IAM policy for Lambda to access S3 data lake (for model loading)
+resource "aws_iam_role_policy" "lambda_ml_s3" {
+  name = "lambda-ml-s3-access"
+  role = aws_iam_role.lambda_exec.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "s3:GetObject"
+        ]
+        Resource = "${aws_s3_bucket.data_lake.arn}/models/*"
+      }
+    ]
+  })
+}
