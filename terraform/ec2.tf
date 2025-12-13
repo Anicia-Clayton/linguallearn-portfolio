@@ -71,3 +71,22 @@ resource "aws_iam_instance_profile" "ec2_profile" {
   name = "${var.project_name}-ec2-profile-${var.environment}"
   role = aws_iam_role.ec2_role.name
 }
+
+# Allow EC2 to invoke Lambda functions (for ML predictions API)
+resource "aws_iam_role_policy" "ec2_lambda_invoke" {
+  name = "${var.project_name}-ec2-lambda-invoke-${var.environment}"
+  role = aws_iam_role.ec2_role.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "lambda:InvokeFunction"
+        ]
+        Resource = aws_lambda_function.ml_inference.arn
+      }
+    ]
+  })
+}

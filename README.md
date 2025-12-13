@@ -104,14 +104,15 @@ linguallearn-portfolio/                 # Project root
 ├── curl-format.txt                     # Curl Command Format
 |
 ├── docs/                               # Comprehensive documentation
-│   ├── SAD.md                          # Solution Architecture Document
-│   ├── RUNBOOK.md                      # Operations guide
-│   ├── ADR.md                          # Architecture Decision Record
+│   ├── SAD.md                          # Solution Architecture Document (portfolio site)
+│   ├── RUNBOOK.md                      # Operations guide (portfolio site)
+│   ├── ADRs.md                         # Architecture Decision Records (1-6 are on portfolio site)
 │   ├── Project_Tracker.xlsx            # Complete Project Tracker
 │   ├── TROUBLESHOOTING.md              # Quick reference guide
 │   └── lessons-learned/                # Detailed troubleshooting stories
 │       ├── ssm-connectivity.md
 │       ├── git-nested-repo.md
+│       ├── lambda-ml-layer-optimization.md
 │
 ├── public/                             # Public assets
 │   └── index.html                      # HTML entry point
