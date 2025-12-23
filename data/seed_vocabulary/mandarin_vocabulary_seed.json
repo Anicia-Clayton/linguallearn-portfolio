@@ -1,0 +1,794 @@
+[
+  {
+    "word_native": "hello",
+    "word_target": "你好",
+    "context_sentence": "你好，很高興見到你。(nǐ hǎo, hěn gāo xìng jiàn dào nǐ)",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "goodbye",
+    "word_target": "再見",
+    "context_sentence": "再見，明天見！(zài jiàn, míng tiān jiàn)",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "thank you",
+    "word_target": "謝謝",
+    "context_sentence": "謝謝你的幫助。(xiè xie nǐ de bāng zhù)",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "you're welcome",
+    "word_target": "不客氣",
+    "context_sentence": "不客氣，別客氣。(bú kè qi, bié kè qi)",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "I'm sorry",
+    "word_target": "對不起",
+    "context_sentence": "對不起，我遲到了。(duì bu qǐ, wǒ chí dào le)",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "it doesn't matter",
+    "word_target": "沒關係",
+    "context_sentence": "沒關係，下次注意就好。(méi guān xi, xià cì zhù yì jiù hǎo)",
+    "difficulty_level": 1,
+    "category": "phrases",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "I",
+    "word_target": "我",
+    "context_sentence": "我是學生。(wǒ shì xué sheng)",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "you",
+    "word_target": "你",
+    "context_sentence": "你好嗎？(nǐ hǎo ma)",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "he/him",
+    "word_target": "他",
+    "context_sentence": "他是我朋友。(tā shì wǒ péng you)",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "she/her",
+    "word_target": "她",
+    "context_sentence": "她很漂亮。(tā hěn piào liang)",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "we/us",
+    "word_target": "我們",
+    "context_sentence": "我們是同學。(wǒ men shì tóng xué)",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "not",
+    "word_target": "不",
+    "context_sentence": "我不知道。(wǒ bù zhī dào)",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "is/am/are",
+    "word_target": "是",
+    "context_sentence": "我是美國人。(wǒ shì měi guó rén)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to have",
+    "word_target": "有",
+    "context_sentence": "我有一個問題。(wǒ yǒu yí gè wèn tí)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "don't have",
+    "word_target": "沒有",
+    "context_sentence": "我沒有錢。(wǒ méi yǒu qián)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "at/in",
+    "word_target": "在",
+    "context_sentence": "我在家。(wǒ zài jiā)",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "one",
+    "word_target": "一",
+    "context_sentence": "一個人。(yí gè rén)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "two",
+    "word_target": "二",
+    "context_sentence": "二月。(èr yuè)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "three",
+    "word_target": "三",
+    "context_sentence": "三個人。(sān gè rén)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "four",
+    "word_target": "四",
+    "context_sentence": "四點鐘。(sì diǎn zhōng)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "five",
+    "word_target": "五",
+    "context_sentence": "五天。(wǔ tiān)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "six",
+    "word_target": "六",
+    "context_sentence": "六個月。(liù gè yuè)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "seven",
+    "word_target": "七",
+    "context_sentence": "七點半。(qī diǎn bàn)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "eight",
+    "word_target": "八",
+    "context_sentence": "八月。(bā yuè)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "nine",
+    "word_target": "九",
+    "context_sentence": "九個人。(jiǔ gè rén)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "ten",
+    "word_target": "十",
+    "context_sentence": "十塊錢。(shí kuài qián)",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to eat",
+    "word_target": "吃",
+    "context_sentence": "我想吃飯。(wǒ xiǎng chī fàn)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to drink",
+    "word_target": "喝",
+    "context_sentence": "我喝咖啡。(wǒ hē kā fēi)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to look/watch",
+    "word_target": "看",
+    "context_sentence": "我看電視。(wǒ kàn diàn shì)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to see",
+    "word_target": "看見",
+    "context_sentence": "我看見他了。(wǒ kàn jiàn tā le)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to go",
+    "word_target": "去",
+    "context_sentence": "我去學校。(wǒ qù xué xiào)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to come",
+    "word_target": "來",
+    "context_sentence": "你來我家。(nǐ lái wǒ jiā)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to buy",
+    "word_target": "買",
+    "context_sentence": "我買東西。(wǒ mǎi dōng xi)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to read",
+    "word_target": "讀",
+    "context_sentence": "我讀書。(wǒ dú shū)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to write",
+    "word_target": "寫",
+    "context_sentence": "我寫字。(wǒ xiě zì)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to listen",
+    "word_target": "聽",
+    "context_sentence": "我聽音樂。(wǒ tīng yīn yuè)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to speak",
+    "word_target": "說",
+    "context_sentence": "我說中文。(wǒ shuō zhōng wén)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to do/make",
+    "word_target": "做",
+    "context_sentence": "我做功課。(wǒ zuò gōng kè)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to sit",
+    "word_target": "坐",
+    "context_sentence": "請坐。(qǐng zuò)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to sleep",
+    "word_target": "睡覺",
+    "context_sentence": "我想睡覺。(wǒ xiǎng shuì jiào)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to live/stay",
+    "word_target": "住",
+    "context_sentence": "我住在台北。(wǒ zhù zài tái běi)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to work",
+    "word_target": "工作",
+    "context_sentence": "我在這裡工作。(wǒ zài zhè lǐ gōng zuò)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to study",
+    "word_target": "學習",
+    "context_sentence": "我學習中文。(wǒ xué xí zhōng wén)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to be called",
+    "word_target": "叫",
+    "context_sentence": "我叫小明。(wǒ jiào xiǎo míng)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to like",
+    "word_target": "喜歡",
+    "context_sentence": "我喜歡你。(wǒ xǐ huan nǐ)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to love",
+    "word_target": "愛",
+    "context_sentence": "我愛台灣。(wǒ ài tái wān)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to want/think",
+    "word_target": "想",
+    "context_sentence": "我想喝水。(wǒ xiǎng hē shuǐ)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "to know/recognize",
+    "word_target": "認識",
+    "context_sentence": "很高興認識你。(hěn gāo xìng rèn shi nǐ)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "can/be able to",
+    "word_target": "能",
+    "context_sentence": "我能說中文。(wǒ néng shuō zhōng wén)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "can/know how to",
+    "word_target": "會",
+    "context_sentence": "我會游泳。(wǒ huì yóu yǒng)",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "what",
+    "word_target": "什麼",
+    "context_sentence": "這是什麼？(zhè shì shén me)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "where",
+    "word_target": "哪兒",
+    "context_sentence": "你在哪兒？(nǐ zài nǎ er)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "who",
+    "word_target": "誰",
+    "context_sentence": "他是誰？(tā shì shéi)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "how",
+    "word_target": "怎麼",
+    "context_sentence": "怎麼說？(zěn me shuō)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "how about",
+    "word_target": "怎麼樣",
+    "context_sentence": "你覺得怎麼樣？(nǐ jué de zěn me yàng)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "how many",
+    "word_target": "幾",
+    "context_sentence": "幾點了？(jǐ diǎn le)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "how much",
+    "word_target": "多少",
+    "context_sentence": "多少錢？(duō shǎo qián)",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "this",
+    "word_target": "這",
+    "context_sentence": "這是什麼？(zhè shì shén me)",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "that",
+    "word_target": "那",
+    "context_sentence": "那是我的。(nà shì wǒ de)",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "today",
+    "word_target": "今天",
+    "context_sentence": "今天天氣很好。(jīn tiān tiān qì hěn hǎo)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "tomorrow",
+    "word_target": "明天",
+    "context_sentence": "明天見。(míng tiān jiàn)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "yesterday",
+    "word_target": "昨天",
+    "context_sentence": "昨天我很忙。(zuó tiān wǒ hěn máng)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "now",
+    "word_target": "現在",
+    "context_sentence": "我現在很忙。(wǒ xiàn zài hěn máng)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "year",
+    "word_target": "年",
+    "context_sentence": "今年。(jīn nián)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "month",
+    "word_target": "月",
+    "context_sentence": "一月。(yī yuè)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "week",
+    "word_target": "星期",
+    "context_sentence": "星期一。(xīng qī yī)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "o'clock",
+    "word_target": "點",
+    "context_sentence": "三點。(sān diǎn)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "minute",
+    "word_target": "分鐘",
+    "context_sentence": "五分鐘。(wǔ fēn zhōng)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "morning",
+    "word_target": "上午",
+    "context_sentence": "上午九點。(shàng wǔ jiǔ diǎn)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "noon",
+    "word_target": "中午",
+    "context_sentence": "中午吃飯。(zhōng wǔ chī fàn)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "afternoon",
+    "word_target": "下午",
+    "context_sentence": "下午三點。(xià wǔ sān diǎn)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "when",
+    "word_target": "時候",
+    "context_sentence": "什麼時候？(shén me shí hou)",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "person",
+    "word_target": "人",
+    "context_sentence": "很多人。(hěn duō rén)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "name",
+    "word_target": "名字",
+    "context_sentence": "你叫什麼名字？(nǐ jiào shén me míng zi)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "friend",
+    "word_target": "朋友",
+    "context_sentence": "我的朋友。(wǒ de péng you)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "teacher",
+    "word_target": "老師",
+    "context_sentence": "我的老師。(wǒ de lǎo shī)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "student",
+    "word_target": "學生",
+    "context_sentence": "我是學生。(wǒ shì xué sheng)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "classmate",
+    "word_target": "同學",
+    "context_sentence": "我的同學。(wǒ de tóng xué)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "dad",
+    "word_target": "爸爸",
+    "context_sentence": "我爸爸。(wǒ bà ba)",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "mom",
+    "word_target": "媽媽",
+    "context_sentence": "我媽媽。(wǒ mā ma)",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "son",
+    "word_target": "兒子",
+    "context_sentence": "我的兒子。(wǒ de ér zi)",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "daughter",
+    "word_target": "女兒",
+    "context_sentence": "我的女兒。(wǒ de nǚ ér)",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "home/family",
+    "word_target": "家",
+    "context_sentence": "我在家。(wǒ zài jiā)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "school",
+    "word_target": "學校",
+    "context_sentence": "我去學校。(wǒ qù xué xiào)",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "hospital",
+    "word_target": "醫院",
+    "context_sentence": "去醫院。(qù yī yuàn)",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "restaurant",
+    "word_target": "飯店",
+    "context_sentence": "去飯店吃飯。(qù fàn diàn chī fàn)",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "store",
+    "word_target": "商店",
+    "context_sentence": "去商店買東西。(qù shāng diàn mǎi dōng xi)",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "China",
+    "word_target": "中國",
+    "context_sentence": "我去中國。(wǒ qù zhōng guó)",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "Beijing",
+    "word_target": "北京",
+    "context_sentence": "我去北京。(wǒ qù běi jīng)",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "water",
+    "word_target": "水",
+    "context_sentence": "我想喝水。(wǒ xiǎng hē shuǐ)",
+    "difficulty_level": 1,
+    "category": "food",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "tea",
+    "word_target": "茶",
+    "context_sentence": "喝茶。(hē chá)",
+    "difficulty_level": 1,
+    "category": "food",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "rice",
+    "word_target": "米飯",
+    "context_sentence": "吃米飯。(chī mǐ fàn)",
+    "difficulty_level": 1,
+    "category": "food",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "apple",
+    "word_target": "蘋果",
+    "context_sentence": "我喜歡吃蘋果。(wǒ xǐ huan chī píng guǒ)",
+    "difficulty_level": 1,
+    "category": "food",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "measure word",
+    "word_target": "個",
+    "context_sentence": "一個人。(yí gè rén)",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "very",
+    "word_target": "很",
+    "context_sentence": "很好。(hěn hǎo)",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "big",
+    "word_target": "大",
+    "context_sentence": "很大。(hěn dà)",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "small",
+    "word_target": "小",
+    "context_sentence": "很小。(hěn xiǎo)",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "good",
+    "word_target": "好",
+    "context_sentence": "很好。(hěn hǎo)",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "hsk1"
+  },
+  {
+    "word_native": "happy",
+    "word_target": "高興",
+    "context_sentence": "我很高興。(wǒ hěn gāo xìng)",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "hsk1"
+  }
+]

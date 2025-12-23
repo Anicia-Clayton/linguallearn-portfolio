@@ -1,0 +1,810 @@
+[
+  {
+    "word_native": "hello",
+    "word_target": "bonjour",
+    "context_sentence": "Bonjour, comment allez-vous?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_french"
+  },
+  {
+    "word_native": "goodbye",
+    "word_target": "au revoir",
+    "context_sentence": "Au revoir, à bientôt!",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_french"
+  },
+  {
+    "word_native": "please",
+    "word_target": "s'il vous plaît",
+    "context_sentence": "Un café, s'il vous plaît.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_french"
+  },
+  {
+    "word_native": "thank you",
+    "word_target": "merci",
+    "context_sentence": "Merci beaucoup pour votre aide.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_french"
+  },
+  {
+    "word_native": "excuse me",
+    "word_target": "excusez-moi",
+    "context_sentence": "Excusez-moi, où est la gare?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_french"
+  },
+  {
+    "word_native": "yes",
+    "word_target": "oui",
+    "context_sentence": "Oui, c'est correct.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "no",
+    "word_target": "non",
+    "context_sentence": "Non, je ne peux pas.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "as/like",
+    "word_target": "comme",
+    "context_sentence": "Il est grand comme son père.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "I",
+    "word_target": "je",
+    "context_sentence": "Je suis étudiant.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "his/her",
+    "word_target": "son",
+    "context_sentence": "C'est son livre.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "that",
+    "word_target": "que",
+    "context_sentence": "Je pense que c'est vrai.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "he",
+    "word_target": "il",
+    "context_sentence": "Il travaille ici.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "was",
+    "word_target": "était",
+    "context_sentence": "Il était très content.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "for",
+    "word_target": "pour",
+    "context_sentence": "C'est pour toi.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "on",
+    "word_target": "sur",
+    "context_sentence": "Le livre est sur la table.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "are",
+    "word_target": "sont",
+    "context_sentence": "Ils sont mes amis.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "with",
+    "word_target": "avec",
+    "context_sentence": "Je viens avec toi.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "they",
+    "word_target": "ils",
+    "context_sentence": "Ils parlent français.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to be",
+    "word_target": "être",
+    "context_sentence": "Je veux être médecin.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "at",
+    "word_target": "à",
+    "context_sentence": "Je suis à la maison.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "one",
+    "word_target": "un",
+    "context_sentence": "J'ai un chat.",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to have",
+    "word_target": "avoir",
+    "context_sentence": "J'ai vingt ans.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "this",
+    "word_target": "ce",
+    "context_sentence": "Ce livre est intéressant.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "from",
+    "word_target": "de",
+    "context_sentence": "Je viens de Paris.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "by",
+    "word_target": "par",
+    "context_sentence": "Il voyage par avion.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "hot",
+    "word_target": "chaud",
+    "context_sentence": "Le café est chaud.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_french"
+  },
+  {
+    "word_native": "word",
+    "word_target": "mot",
+    "context_sentence": "C'est un nouveau mot.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "but",
+    "word_target": "mais",
+    "context_sentence": "J'aime ça, mais c'est cher.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "what",
+    "word_target": "quoi",
+    "context_sentence": "De quoi parles-tu?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_french"
+  },
+  {
+    "word_native": "some",
+    "word_target": "certains",
+    "context_sentence": "Certains étudiants sont absents.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "is",
+    "word_target": "est",
+    "context_sentence": "Il est professeur.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "it",
+    "word_target": "il",
+    "context_sentence": "Il fait beau aujourd'hui.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "you",
+    "word_target": "vous",
+    "context_sentence": "Vous êtes très gentil.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "or",
+    "word_target": "ou",
+    "context_sentence": "Thé ou café?",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "had",
+    "word_target": "eu",
+    "context_sentence": "J'ai eu de la chance.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "the",
+    "word_target": "la",
+    "context_sentence": "La maison est grande.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "of",
+    "word_target": "de",
+    "context_sentence": "Le livre de Marie.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to",
+    "word_target": "à",
+    "context_sentence": "Je vais à l'école.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "and",
+    "word_target": "et",
+    "context_sentence": "J'aime le café et le thé.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "a/an",
+    "word_target": "un",
+    "context_sentence": "C'est un beau jour.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "in",
+    "word_target": "dans",
+    "context_sentence": "Il est dans la chambre.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "we",
+    "word_target": "nous",
+    "context_sentence": "Nous sommes amis.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "can",
+    "word_target": "pouvoir",
+    "context_sentence": "Je peux vous aider.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "out",
+    "word_target": "dehors",
+    "context_sentence": "Il fait froid dehors.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "other",
+    "word_target": "autre",
+    "context_sentence": "L'autre option est meilleure.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "were",
+    "word_target": "étaient",
+    "context_sentence": "Ils étaient contents.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "which",
+    "word_target": "qui",
+    "context_sentence": "Qui est là?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to do",
+    "word_target": "faire",
+    "context_sentence": "Qu'est-ce que tu fais?",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "their",
+    "word_target": "leur",
+    "context_sentence": "C'est leur maison.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "time",
+    "word_target": "temps",
+    "context_sentence": "Je n'ai pas le temps.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "if",
+    "word_target": "si",
+    "context_sentence": "Si tu veux, on peut y aller.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "will",
+    "word_target": "volonté",
+    "context_sentence": "Il a la volonté de réussir.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "how",
+    "word_target": "comment",
+    "context_sentence": "Comment ça va?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_french"
+  },
+  {
+    "word_native": "said",
+    "word_target": "dit",
+    "context_sentence": "Il a dit la vérité.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "each",
+    "word_target": "chaque",
+    "context_sentence": "Chaque jour est un nouveau début.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to tell",
+    "word_target": "dire",
+    "context_sentence": "Je vais te dire un secret.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "does",
+    "word_target": "fait",
+    "context_sentence": "Il fait ses devoirs.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "set",
+    "word_target": "ensemble",
+    "context_sentence": "Nous travaillons ensemble.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "three",
+    "word_target": "trois",
+    "context_sentence": "J'ai trois frères.",
+    "difficulty_level": 1,
+    "category": "numbers",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to want",
+    "word_target": "vouloir",
+    "context_sentence": "Je veux apprendre le français.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "air",
+    "word_target": "air",
+    "context_sentence": "L'air est frais ce matin.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "well",
+    "word_target": "bien",
+    "context_sentence": "Tout va bien.",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "also",
+    "word_target": "aussi",
+    "context_sentence": "Je viens aussi.",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to play",
+    "word_target": "jouer",
+    "context_sentence": "Les enfants jouent dans le parc.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "small",
+    "word_target": "petit",
+    "context_sentence": "C'est un petit chat.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_french"
+  },
+  {
+    "word_native": "end",
+    "word_target": "fin",
+    "context_sentence": "C'est la fin du film.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to put",
+    "word_target": "mettre",
+    "context_sentence": "Je vais mettre la table.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "home",
+    "word_target": "maison",
+    "context_sentence": "Je rentre à la maison.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to read",
+    "word_target": "lire",
+    "context_sentence": "J'aime lire des livres.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "hand",
+    "word_target": "main",
+    "context_sentence": "Lève la main.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "large",
+    "word_target": "grand",
+    "context_sentence": "C'est une grande ville.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to add",
+    "word_target": "ajouter",
+    "context_sentence": "N'oublie pas d'ajouter du sel.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "even",
+    "word_target": "même",
+    "context_sentence": "Même moi, je ne sais pas.",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "land",
+    "word_target": "terre",
+    "context_sentence": "La terre est fertile.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "here",
+    "word_target": "ici",
+    "context_sentence": "Je suis ici.",
+    "difficulty_level": 1,
+    "category": "location",
+    "source": "common_french"
+  },
+  {
+    "word_native": "must",
+    "word_target": "il faut",
+    "context_sentence": "Il faut étudier.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "big",
+    "word_target": "grand",
+    "context_sentence": "Un grand homme.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_french"
+  },
+  {
+    "word_native": "high",
+    "word_target": "haut",
+    "context_sentence": "La montagne est haute.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_french"
+  },
+  {
+    "word_native": "such",
+    "word_target": "tel",
+    "context_sentence": "Je n'ai jamais vu une telle chose.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to follow",
+    "word_target": "suivre",
+    "context_sentence": "Suivez-moi, s'il vous plaît.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "act",
+    "word_target": "acte",
+    "context_sentence": "C'est un acte de courage.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "why",
+    "word_target": "pourquoi",
+    "context_sentence": "Pourquoi es-tu en retard?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to ask",
+    "word_target": "demander",
+    "context_sentence": "Je vais lui demander.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "men",
+    "word_target": "hommes",
+    "context_sentence": "Les hommes travaillent ici.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "change",
+    "word_target": "changement",
+    "context_sentence": "Le changement est nécessaire.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "went",
+    "word_target": "est allé",
+    "context_sentence": "Il est allé au marché.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "light",
+    "word_target": "lumière",
+    "context_sentence": "Allume la lumière.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "kind",
+    "word_target": "genre",
+    "context_sentence": "Quel genre de musique aimes-tu?",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "off",
+    "word_target": "de",
+    "context_sentence": "Éteins la lumière.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_french"
+  },
+  {
+    "word_native": "need",
+    "word_target": "besoin",
+    "context_sentence": "J'ai besoin d'aide.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "house",
+    "word_target": "maison",
+    "context_sentence": "Ma maison est près d'ici.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "picture",
+    "word_target": "image",
+    "context_sentence": "C'est une belle image.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "to try",
+    "word_target": "essayer",
+    "context_sentence": "Il faut essayer.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "us",
+    "word_target": "nous",
+    "context_sentence": "Viens avec nous.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "again",
+    "word_target": "encore",
+    "context_sentence": "Encore une fois.",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "common_french"
+  },
+  {
+    "word_native": "animal",
+    "word_target": "animal",
+    "context_sentence": "J'aime les animaux.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "point",
+    "word_target": "point",
+    "context_sentence": "C'est un bon point.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "mother",
+    "word_target": "mère",
+    "context_sentence": "Ma mère est gentille.",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "common_french"
+  },
+  {
+    "word_native": "world",
+    "word_target": "monde",
+    "context_sentence": "Le monde est grand.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_french"
+  },
+  {
+    "word_native": "near",
+    "word_target": "près de",
+    "context_sentence": "J'habite près de l'école.",
+    "difficulty_level": 1,
+    "category": "location",
+    "source": "common_french"
+  },
+  {
+    "word_native": "father",
+    "word_target": "père",
+    "context_sentence": "Mon père travaille beaucoup.",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "common_french"
+  }
+]

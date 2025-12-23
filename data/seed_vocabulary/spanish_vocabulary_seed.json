@@ -1,0 +1,794 @@
+[
+  {
+    "word_native": "hello",
+    "word_target": "hola",
+    "context_sentence": "Hola, ¿cómo estás?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "yes",
+    "word_target": "sí",
+    "context_sentence": "Sí, me gusta.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "no",
+    "word_target": "no",
+    "context_sentence": "No, gracias.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "thank you",
+    "word_target": "gracias",
+    "context_sentence": "Muchas gracias por tu ayuda.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "please",
+    "word_target": "por favor",
+    "context_sentence": "Un café, por favor.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "goodbye",
+    "word_target": "adiós",
+    "context_sentence": "Adiós, hasta mañana.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "good morning",
+    "word_target": "buenos días",
+    "context_sentence": "Buenos días, ¿cómo amaneció?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "good afternoon",
+    "word_target": "buenas tardes",
+    "context_sentence": "Buenas tardes, señor.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "good night",
+    "word_target": "buenas noches",
+    "context_sentence": "Buenas noches, que duermas bien.",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "excuse me",
+    "word_target": "perdón",
+    "context_sentence": "Perdón, ¿dónde está el baño?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "I",
+    "word_target": "yo",
+    "context_sentence": "Yo soy de Estados Unidos.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "you",
+    "word_target": "tú",
+    "context_sentence": "Tú eres muy amable.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "he",
+    "word_target": "él",
+    "context_sentence": "Él es mi hermano.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "she",
+    "word_target": "ella",
+    "context_sentence": "Ella trabaja aquí.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "we",
+    "word_target": "nosotros",
+    "context_sentence": "Nosotros estudiamos español.",
+    "difficulty_level": 1,
+    "category": "pronouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to be (permanent)",
+    "word_target": "ser",
+    "context_sentence": "Yo soy estudiante.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to be (temporary)",
+    "word_target": "estar",
+    "context_sentence": "Estoy en casa.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to have",
+    "word_target": "tener",
+    "context_sentence": "Tengo hambre.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to do/make",
+    "word_target": "hacer",
+    "context_sentence": "¿Qué haces?",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to go",
+    "word_target": "ir",
+    "context_sentence": "Voy al mercado.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to speak",
+    "word_target": "hablar",
+    "context_sentence": "Hablo español.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to eat",
+    "word_target": "comer",
+    "context_sentence": "Me gusta comer frutas.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to drink",
+    "word_target": "beber",
+    "context_sentence": "Quiero beber agua.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to see",
+    "word_target": "ver",
+    "context_sentence": "Veo la televisión.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to want",
+    "word_target": "querer",
+    "context_sentence": "Quiero aprender español.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to know (facts)",
+    "word_target": "saber",
+    "context_sentence": "No sé la respuesta.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to live",
+    "word_target": "vivir",
+    "context_sentence": "Vivo en la ciudad.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to work",
+    "word_target": "trabajar",
+    "context_sentence": "Trabajo en una oficina.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to study",
+    "word_target": "estudiar",
+    "context_sentence": "Estudio en la universidad.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "to come",
+    "word_target": "venir",
+    "context_sentence": "Vengo de la escuela.",
+    "difficulty_level": 1,
+    "category": "verbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "and",
+    "word_target": "y",
+    "context_sentence": "Pan y mantequilla.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "or",
+    "word_target": "o",
+    "context_sentence": "¿Té o café?",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "but",
+    "word_target": "pero",
+    "context_sentence": "Me gusta, pero es caro.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "what",
+    "word_target": "qué",
+    "context_sentence": "¿Qué hora es?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "where",
+    "word_target": "dónde",
+    "context_sentence": "¿Dónde vives?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "when",
+    "word_target": "cuándo",
+    "context_sentence": "¿Cuándo llegas?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "who",
+    "word_target": "quién",
+    "context_sentence": "¿Quién es ella?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "why",
+    "word_target": "por qué",
+    "context_sentence": "¿Por qué estudias español?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "how",
+    "word_target": "cómo",
+    "context_sentence": "¿Cómo te llamas?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "how much",
+    "word_target": "cuánto",
+    "context_sentence": "¿Cuánto cuesta?",
+    "difficulty_level": 1,
+    "category": "questions",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "house",
+    "word_target": "casa",
+    "context_sentence": "Mi casa es pequeña.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "day",
+    "word_target": "día",
+    "context_sentence": "Hoy es un buen día.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "time",
+    "word_target": "tiempo",
+    "context_sentence": "No tengo tiempo.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "year",
+    "word_target": "año",
+    "context_sentence": "Tengo 25 años.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "thing",
+    "word_target": "cosa",
+    "context_sentence": "¿Qué es esa cosa?",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "man",
+    "word_target": "hombre",
+    "context_sentence": "Ese hombre es mi padre.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "woman",
+    "word_target": "mujer",
+    "context_sentence": "Esa mujer es mi madre.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "people",
+    "word_target": "gente",
+    "context_sentence": "Hay mucha gente aquí.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "life",
+    "word_target": "vida",
+    "context_sentence": "La vida es bella.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "water",
+    "word_target": "agua",
+    "context_sentence": "Necesito agua fría.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "food",
+    "word_target": "comida",
+    "context_sentence": "La comida está deliciosa.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "work",
+    "word_target": "trabajo",
+    "context_sentence": "Voy al trabajo.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "school",
+    "word_target": "escuela",
+    "context_sentence": "Los niños van a la escuela.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "friend",
+    "word_target": "amigo",
+    "context_sentence": "Mi mejor amigo vive aquí.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "father",
+    "word_target": "padre",
+    "context_sentence": "Mi padre trabaja mucho.",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "mother",
+    "word_target": "madre",
+    "context_sentence": "Mi madre cocina bien.",
+    "difficulty_level": 1,
+    "category": "family",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "good",
+    "word_target": "bueno",
+    "context_sentence": "Este libro es bueno.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "bad",
+    "word_target": "malo",
+    "context_sentence": "Hoy es un mal día.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "big",
+    "word_target": "grande",
+    "context_sentence": "Nueva York es grande.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "small",
+    "word_target": "pequeño",
+    "context_sentence": "Mi apartamento es pequeño.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "new",
+    "word_target": "nuevo",
+    "context_sentence": "Tengo un carro nuevo.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "old",
+    "word_target": "viejo",
+    "context_sentence": "Este edificio es viejo.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "very",
+    "word_target": "muy",
+    "context_sentence": "Estoy muy cansado.",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "well",
+    "word_target": "bien",
+    "context_sentence": "Todo está bien.",
+    "difficulty_level": 1,
+    "category": "adverbs",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "today",
+    "word_target": "hoy",
+    "context_sentence": "Hoy hace buen tiempo.",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "tomorrow",
+    "word_target": "mañana",
+    "context_sentence": "Nos vemos mañana.",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "now",
+    "word_target": "ahora",
+    "context_sentence": "Hazlo ahora.",
+    "difficulty_level": 1,
+    "category": "time",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "here",
+    "word_target": "aquí",
+    "context_sentence": "Estoy aquí.",
+    "difficulty_level": 1,
+    "category": "location",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "there",
+    "word_target": "allí",
+    "context_sentence": "El banco está allí.",
+    "difficulty_level": 1,
+    "category": "location",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "what's up (dominican)",
+    "word_target": "¿Qué lo qué?",
+    "context_sentence": "¡Eh! ¿Qué lo qué, hermano?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "thing/stuff (dominican)",
+    "word_target": "vaina",
+    "context_sentence": "¿Qué es esa vaina?",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "friend (dominican slang)",
+    "word_target": "tigre",
+    "context_sentence": "Ese tigre es mi pana.",
+    "difficulty_level": 2,
+    "category": "nouns",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "bus (dominican)",
+    "word_target": "guagua",
+    "context_sentence": "Voy a tomar la guagua.",
+    "difficulty_level": 1,
+    "category": "transportation",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "okay (dominican)",
+    "word_target": "yala",
+    "context_sentence": "Yala, nos vemos luego.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "small store (dominican)",
+    "word_target": "colmado",
+    "context_sentence": "Voy al colmado a comprar.",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "crispy rice (dominican food)",
+    "word_target": "concon",
+    "context_sentence": "El concon es mi parte favorita.",
+    "difficulty_level": 2,
+    "category": "food",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "cold beer (dominican)",
+    "word_target": "unas frías",
+    "context_sentence": "Vamos a tomar unas frías.",
+    "difficulty_level": 2,
+    "category": "food",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "broke/without money (dominican)",
+    "word_target": "pelao",
+    "context_sentence": "Estoy pelao hasta el viernes.",
+    "difficulty_level": 2,
+    "category": "adjectives",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "shared taxi (dominican)",
+    "word_target": "carrito",
+    "context_sentence": "Tomamos un carrito pa' la casa.",
+    "difficulty_level": 1,
+    "category": "transportation",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "hello (phone, dominican)",
+    "word_target": "aló",
+    "context_sentence": "Aló, ¿quién habla?",
+    "difficulty_level": 1,
+    "category": "greetings",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "tell me (dominican)",
+    "word_target": "dime a ver",
+    "context_sentence": "Dime a ver, ¿qué pasó?",
+    "difficulty_level": 1,
+    "category": "phrases",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "a little bit (dominican)",
+    "word_target": "un chin",
+    "context_sentence": "Dame un chin de azúcar.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "cool/neat (dominican)",
+    "word_target": "nítido",
+    "context_sentence": "Eso está nítido, hermano.",
+    "difficulty_level": 2,
+    "category": "adjectives",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "t-shirt/jersey (dominican)",
+    "word_target": "tícher",
+    "context_sentence": "Me gusta ese tícher.",
+    "difficulty_level": 2,
+    "category": "clothes",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "SUV (dominican)",
+    "word_target": "yipeta",
+    "context_sentence": "Tiene una yipeta grande.",
+    "difficulty_level": 2,
+    "category": "transportation",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "cornflakes/cereal (dominican)",
+    "word_target": "con fléi",
+    "context_sentence": "Desayuno con fléi cada día.",
+    "difficulty_level": 2,
+    "category": "food",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "buddy/pal (dominican)",
+    "word_target": "pana",
+    "context_sentence": "Ese es mi pana de toda la vida.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "a lot (dominican)",
+    "word_target": "un chin de",
+    "context_sentence": "Hay un chin de gente aquí.",
+    "difficulty_level": 1,
+    "category": "basics",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "street-smart person (dominican)",
+    "word_target": "tíguere",
+    "context_sentence": "Él es un tíguere de la calle.",
+    "difficulty_level": 2,
+    "category": "nouns",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "it's all good (dominican)",
+    "word_target": "ta' to'",
+    "context_sentence": "No te preocupes, ta' to' bien.",
+    "difficulty_level": 1,
+    "category": "phrases",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "no problem (dominican)",
+    "word_target": "no hay lío",
+    "context_sentence": "No hay lío, brother.",
+    "difficulty_level": 1,
+    "category": "phrases",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "corn cake (dominican)",
+    "word_target": "arepa",
+    "context_sentence": "Las arepas están calientes.",
+    "difficulty_level": 1,
+    "category": "food",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "plantain (dominican food)",
+    "word_target": "plátano",
+    "context_sentence": "Me encanta el plátano frito.",
+    "difficulty_level": 1,
+    "category": "food",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "let's go (dominican)",
+    "word_target": "vámonos",
+    "context_sentence": "Vámonos pa'lla ahora.",
+    "difficulty_level": 1,
+    "category": "phrases",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "money (dominican slang)",
+    "word_target": "cuarto",
+    "context_sentence": "No tengo cuarto.",
+    "difficulty_level": 2,
+    "category": "nouns",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "nice/beautiful (dominican)",
+    "word_target": "chevere",
+    "context_sentence": "Qué chevere está eso.",
+    "difficulty_level": 1,
+    "category": "adjectives",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "hangout spot (dominican)",
+    "word_target": "esquina",
+    "context_sentence": "Nos vemos en la esquina.",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "dominican_slang"
+  },
+  {
+    "word_native": "party (dominican)",
+    "word_target": "fiesta",
+    "context_sentence": "Hay una fiesta esta noche.",
+    "difficulty_level": 1,
+    "category": "nouns",
+    "source": "common_spanish"
+  },
+  {
+    "word_native": "beach",
+    "word_target": "playa",
+    "context_sentence": "Vamos a la playa mañana.",
+    "difficulty_level": 1,
+    "category": "places",
+    "source": "common_spanish"
+  }
+]
