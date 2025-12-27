@@ -148,6 +148,43 @@ aws ec2 describe-instances --query "Reservations[0].Instances[0].State"
 wsl aws ec2 describe-instances --query "Reservations[0].Instances[0].State"
 ```
 
+### Issue: AWS CLI SSL Certificate Error
+
+**Error Message:**
+```
+SSL validation failed for https://ssm.us-east-1.amazonaws.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed:
+self-signed certificate in certificate chain (_ssl.c:1010)
+```
+
+**Cause:**
+Corporate proxy/firewall/antivirus intercepting HTTPS with self-signed certificates.
+
+**Solution (Quick):**
+```bash
+# Disable SSL verification for AWS CLI
+aws configure set cli_verify_ssl false
+
+# Or use --no-verify-ssl flag
+aws ssm start-session --target i-INSTANCE-ID --no-verify-ssl
+```
+
+**Solution (Better):**
+```bash
+# Download CA bundle
+curl https://curl.se/ca/cacert.pem -o C:\aws-ca-bundle.pem
+
+# Configure AWS CLI
+aws configure set ca_bundle C:\aws-ca-bundle.pem
+```
+
+**Verify Fix:**
+```bash
+aws ssm start-session --target i-YOUR-INSTANCE-ID
+```
+
+**Related:** Same root cause as Git SSL error (see Git section above).
+
 ---
 
 ## Git & Version Control
@@ -175,7 +212,71 @@ terraform.tfvars     # Contains secrets
 git filter-branch --tree-filter 'rm -f terraform.tfstate' HEAD
 git push --force
 ```
+### Issue: SSL Certificate Error on Windows
 
+**Error Message:**
+```
+fatal: unable to access 'https://github.com/Anicia-Clayton/linguallearn-portfolio.git/':
+SSL certificate problem: self-signed certificate in certificate chain
+```
+
+**Cause:**
+Git for Windows uses its own CA certificate bundle, which may be outdated or conflict with corporate proxies, antivirus software, or firewalls that inject self-signed certificates.
+
+**Solution:**
+Configure Git to use Windows native certificate handling (schannel backend):
+
+```bash
+# Set Git to use Windows Certificate Store
+git config --global http.sslbackend schannel
+
+# Verify the setting
+git config --global --get http.sslbackend
+
+# Now Git commands should work
+git pull origin main
+git push origin main
+```
+
+**Why This Works:**
+Windows maintains its own up-to-date certificate store. Using `schannel` tells Git to trust the same certificates that your browser and other Windows applications trust.
+
+**Alternative Solutions (if schannel doesn't work):**
+
+**Option A: Disable SSL verification for this repository only**
+```bash
+# Navigate to your repository
+cd /path/to/linguallearn-portfolio
+
+# Disable SSL verification (less secure, but works)
+git config http.sslVerify false
+
+# Pull/push as normal
+git pull origin main
+```
+
+**Option B: Update Git's CA bundle**
+```bash
+# Download latest CA bundle
+curl https://curl.se/ca/cacert.pem -o C:\git-ca-bundle.crt
+
+# Configure Git to use it
+git config --global http.sslCAInfo C:/git-ca-bundle.crt
+
+# Try Git commands again
+git pull origin main
+```
+
+**Prevention:**
+- Keep Git for Windows updated to the latest version
+- If on corporate network, check with IT about proxy/certificate requirements
+- Consider using SSH keys for authentication (eliminates HTTPS SSL issues entirely)
+
+**Related Issues:**
+- If you see "SSL certificate problem" on EC2/Linux, update CA certificates: `sudo yum update ca-certificates -y`
+- For persistent issues behind corporate proxy, configure proxy settings: `git config --global http.proxy http://proxy.company.com:8080`
+
+---
 
 ## AWS Systems Manager (SSM)
 

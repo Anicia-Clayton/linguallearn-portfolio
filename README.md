@@ -1,8 +1,8 @@
-# LinguaLearn AI - Portfolio Project
+# LinguaLearn AI - Production ML Infrastructure Platform
 
-Cloud-native ML application for multilingual learning with multi-modal practice tracking and personalized tutor assistance.
+Cloud-native ML platform demonstrating end-to-end infrastructure deployment, security architecture, and operational excellence for AI-powered applications.
 
-**Tech Stack:** AWS (VPC, EC2, RDS PostgreSQL, Lambda, S3, CloudFront, ALB), Terraform, Python, React, AnkiDeck API
+**Tech Stack:** AWS (VPC, EC2, RDS, Lambda, S3, CloudFront, ALB), Terraform, Python, FastAPI, PostgreSQL
 
 **Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/
 
@@ -10,82 +10,142 @@ Cloud-native ML application for multilingual learning with multi-modal practice 
 
 ## About This Project
 
-**Project Goal:** A portfolio project demonstrating cloud architecture, ML engineering, API integration, multimedia handling, and production-ready practices.
+**Purpose:** Portfolio project demonstrating production-ready ML infrastructure, security architecture, and operational best practices.
 
-I've studied 12 languages (Spanish, Portuguese, Swahili, Romanian, Mandarin, Hausa, Akan Twi, Tagalog, Egyptian Arabic, French, ASL, Haitian Creole) and currently maintain 5 while tutoring students. This project solves a personal problem: traditional flashcard apps don't capture how humans actually learn languages through journaling, media consumption, conversations, and daily practice.
+**Why this project:** As someone who has studied 12 languages and tutors students, I built this to solve a real problem: traditional flashcard apps don't capture how humans actually learn languages. This authentic use case drives architectural decisions and demonstrates practical problem-solving.
 
-### Core Features
+**Technical Focus:** While the application domain is language learning, the primary demonstration is **MLOps and cloud infrastructure engineering** - deployment automation, security architecture, monitoring strategies, and operational best practices for ML systems.
 
-- **Multi-Modal Practice Tracking:** Log journaling entries, music/show notes, book summaries, and conversations - not just flashcards
-- **Language Assignment System:** Assign target languages to specific people or daily tasks (e.g., "always think in Spanish when texting Mom")
-- **ASL Support:** Video-based learning for American Sign Language with S3 + CloudFront CDN delivery
-- **Dialect-Specific Content:** Dominican Spanish, Taiwan Mandarin, and regional language variations
-- **ML Predictions:** Forgetting curve prediction and churn detection using serverless Lambda functions
-- **Tutor Feedback Integration:** Tutors review learner activities and provide personalized guidance
-- **AnkiDeck API Integration:** Pull authentic vocabulary data from community-vetted language decks
-- **12 Languages Supported:** Spanish, Portuguese, Swahili, Romanian, Mandarin, Hausa, Akan Twi, Tagalog, Egyptian Arabic, French, ASL, Haitian Creole
+**Current Progress:** Phase 4 of 6.
 
-### Architecture Highlights
+Infrastructure, API layer, and multi-modal tracking are live.
 
-- **Multi-tier cloud architecture** with VPC isolation, private/public subnets across 2 Availability Zones
-- **Serverless ML inference** using Lambda functions for cost optimization (80% cost savings vs always-on EC2)
-- **PostgreSQL RDS** with Multi-AZ deployment for high availability and complex relational queries (12+ tables)
-- **S3 + CloudFront CDN** for ASL video storage and global content delivery
-- **External API integration** (AnkiDeck) for vocabulary data ingestion
-- **Zero-trust security model** with IAM RBAC, encryption at rest (AES-256) and in transit (TLS 1.2+)
-- **Infrastructure-as-Code** using Terraform with modular design for AWS → Azure portability
-- **Comprehensive documentation:** Solution Architecture Document (SAD), 6 Architecture Decision Records (ADRs), operational runbook with 5 incident scenarios
+Currently implementing ML integration.
 
-### Project Tracker
-
-Comprehensive Excel-based tracker managing all 6 development phases with automated progress monitoring.
-
-**Location:** docs/PROJECT_TRACKER.xlsx
-
-**Features:**
-- Auto-calculated completion percentages
-- Color-coded status indicators
-- Real-time task counts and blocker tracking
-- Full project timeline and change log
-
-**Current Phase:** Infrastructure & API development (Phase 2 of 6)
+Next phases: monitoring and CI/CD automation.
 
 ---
 
-## Project Documentation
+## Infrastructure & Architecture Highlights
 
-This project includes comprehensive documentation organized by purpose:
+### Production-Ready Cloud Architecture
 
-### Core Documentation (in /docs/)
+**Multi-tier infrastructure** with complete infrastructure-as-code implementation:
 
-- Solution Architecture Document (SAD) - Complete system architecture and design
-- Architecture Decision Records (ADRs) - Key technical decisions with rationale
+- **Network Security:** VPC isolation with private/public subnets across 2 Availability Zones, security groups with least-privilege access
+- **High Availability:** Multi-AZ RDS deployment with automated failover, Application Load Balancer with health checks
+- **Compute Layer:** EC2 for API services, serverless Lambda for event-driven processing and ML inference
+- **Data Storage:** PostgreSQL RDS (12+ tables, complex relational queries), S3 data lake, CloudFront CDN for media delivery
+- **Security:** Zero-trust model with IAM RBAC, Secrets Manager for credentials, encryption at rest (AES-256) and in transit (TLS 1.2+)
 
-  - ADR-001: RDS vs DynamoDB for data storage
-  - ADR-002: Lambda for ML inference vs always-on EC2
-  - ADR-003: ALB vs API Gateway
-  - ADR-004: Secrets Manager for credential management
-  - ADR-005: ASL video support implementation
-  - ADR-006: Multi-modal practice tracking approach
-  - ADR-007: SSL Certificate Domain Strategy
+### Infrastructure as Code
 
-- Operational Runbook - Production procedures and incident response
+**Complete Terraform configuration** demonstrating modular, maintainable infrastructure:
 
-### Development Resources
+- Automated provisioning of entire AWS stack (20+ resources)
+- Modular design enabling AWS → Azure portability
+- Version-controlled infrastructure with reproducible deployments
+- Environment separation (dev/staging/prod) ready
 
-- Troubleshooting Guide - Quick fixes for common development issues
+### ML Deployment Architecture
 
-  - Configuration errors
-  - AWS CLI issues
-  - Git and version control problems
-  - Development environment setup
-  - Authentification out of sync
-  - Sckit-Learn Warnings
+**Serverless ML inference design** optimized for cost and scalability:
 
-- Lessons Learned - Detailed problem-solving documentation
+- Lambda functions for ML model inference (80% cost savings vs always-on EC2)
+- Event-driven architecture with S3 triggers for automated processing
+- Model deployment pipeline supporting multiple algorithms (forgetting curve prediction, churn detection)
+- Scalable inference handling variable load patterns
 
-  - SSM Connectivity Issues
-  - Git Sync Issues (nested repo)
+### API & Application Layer
+
+**Production FastAPI deployment** with comprehensive design:
+
+- RESTful endpoints for user management, content CRUD, ML predictions
+- Database connection pooling and query optimization
+- Health checks, structured logging, error handling
+- Designed for horizontal scaling and zero-downtime deployments
+
+### Security & Compliance
+
+**Enterprise security architecture** following AWS best practices:
+
+- IAM role-based access control (RBAC) with least-privilege principle
+- Secrets Manager for credential management (database, API keys)
+- Network isolation with private subnets for data tier
+- Encryption at rest and in transit across all data stores
+- Security audit logging with CloudWatch
+
+### Documentation & Operational Excellence
+
+**Comprehensive technical documentation**:
+
+- **Solution Architecture Document (SAD):** Complete system design and architecture
+- **8 Architecture Decision Records (ADRs):** Key technical decisions with rationale
+  - RDS vs DynamoDB for data storage
+  - Lambda for ML inference cost optimization
+  - ALB vs API Gateway trade-offs
+  - Secrets Manager credential strategy
+  - SSL certificate domain management
+  - Lambda ML layer architecture
+  - Multi-modal data tracking approach
+  - ASL video delivery implementation
+- **Operational Runbook:** Production procedures with 5 incident response scenarios
+- **Troubleshooting Guide:** Common issues and resolutions
+- **Lessons Learned:** Detailed problem-solving documentation
+  - SSM connectivity
+  - Git workflows
+  - Lambda optimization
+
+---
+
+## Technical Challenges & Patterns
+
+This project tackles common production challenges with patterns applicable beyond language learning:
+
+### Multi-Modal Data Handling
+
+Different content types require different strategies. Text goes to PostgreSQL for queries. Video goes to S3 + CloudFront for delivery. Lambda processes media on-demand.
+
+**Cross-Industry Applications:** Patient records (healthcare), loan applications (finance), course materials (education) all combine text, images, audio, and video requiring similar storage and delivery patterns.
+
+### Data Bootstrapping & Organic Growth
+
+When external data sources aren't available, how do you launch? Provide curated seed data to get started, then let the system grow through user contributions. Includes quality validation to maintain data integrity as it scales.
+
+**Cross-Industry Applications:** Telemedicine platforms (providers before patients), investment platforms (market data before traders), learning management systems (courses before students) all face the "cold start" problem of needing data to attract users.
+
+### Variable Workload Cost Optimization
+
+Prediction requests are intermittent—sometimes zero, sometimes hundreds per hour. Serverless Lambda scales automatically and only charges for actual usage. Saves 80% compared to always-on servers ($20/month vs $100/month).
+
+**Cross-Industry Applications:** Patient portals (spikes during flu season, enrollment periods), trading platforms (market hours vs overnight), student systems (registration periods, exam days) all have unpredictable usage requiring flexible, cost-efficient scaling.
+
+
+### Security & Compliance Architecture
+
+Zero-trust security model: encryption at rest (AES-256) and in transit (TLS 1.2+), IAM role-based access control, Secrets Manager for credentials, CloudWatch for audit logging, network isolation with private subnets.
+
+**Cross-Industry Applications:** HIPAA-compliant patient data (healthcare), PCI-DSS payment processing (finance), FERPA-protected student records (education) all require encryption, access controls, audit trails, and regulatory compliance frameworks.
+
+### High Availability & Disaster Recovery
+
+Multi-AZ database deployment with automatic failover, load-balanced application servers (no single point of failure), automated backups. Designed for 99.9% uptime.
+
+**Cross-Industry Applications:** Electronic health records (24/7 patient care), trading platforms (market hours uptime), exam systems (critical deadline reliability) cannot tolerate downtime during critical operations.
+
+### Operational Stability & Change Control
+
+Infrastructure as Code (Terraform) means all changes are reviewed and version-controlled. Comprehensive documentation (8 ADRs, operational runbooks) supports audits and handoffs. Planned CI/CD includes automated testing and rollback procedures.
+
+**Cross-Industry Applications:** Hospital systems (validated changes, rollback capability), financial platforms (tested deployments, instant rollback), university systems (approval processes, stable releases) prioritize reliability over speed in regulated environments.
+
+### Dialect & Variation Support
+
+Supporting regional variations (Dominican Spanish vs Castilian, Taiwan Mandarin vs Mainland) requires flexible data modeling and content organization. PostgreSQL handles this with relational structure.
+
+**Cross-Industry Applications:** Medical terminology variations (US vs UK healthcare systems), financial regulations by jurisdiction (state-specific compliance), curriculum standards by region (state education requirements) all require flexible data models to handle localized content while maintaining system consistency.
+
+---
 
 ## Project Structure
 
@@ -174,3 +234,63 @@ linguallearn-portfolio/                 # Project root
 │   │   ├── handler.py                  # Serverless, Event-Driven video processing
 |
 └── node_modules/                       # Node.js dependencies (gitignored)
+```
+
+---
+
+## Project Tracker
+
+Comprehensive development management with automated progress tracking.
+
+**Location:** `docs/Project_Tracker.xlsx`
+
+**Current Metrics:**
+
+- Phase 1 (Infrastructure): 100%
+- Phase 2 (API & Compute): 100%
+- Phase 3 (Multi-Modal Activities): 100%
+- Phase 4 (ML Integration): ~75%
+- Phase 5 (Monitoring): 0%
+- Phase 6 (CI/CD): 0%
+
+**Features:**
+
+- 6-phase breakdown with granular task management
+- Auto-calculated completion percentages
+- Color-coded status indicators (Complete, In Progress, Blocked)
+- Real-time task counts and blocker tracking
+- Full project timeline and change log
+
+---
+
+## Language Learning Features
+
+Supporting 12 languages with authentic practice tracking:
+
+- **Languages:** Spanish, Portuguese, Swahili, Romanian, Mandarin, Hausa, Akan Twi, Tagalog, Egyptian Arabic, French, ASL, Haitian Creole
+- **Dialect Support:** Regional variations (Dominican Spanish, Taiwan Mandarin)
+- **Practice Types:** Vocabulary, journaling, conversations, media notes (music, shows, books)
+- **ML Predictions:** Forgetting curve (when you'll forget words), churn detection (engagement prediction)
+- **ASL Support:** Video-based learning with S3 + CloudFront delivery
+
+### ASL Video Content
+
+**Current Status:** Demo content for proof-of-concept development. Videos are technically accurate but are for demonstration purposes only.
+
+**Future Plans:** Partnering with universities for officially licensed ASL curriculum content. This will ensure accessibility standards, cultural authenticity, and proper attribution to ASL educators.
+
+---
+
+## Links
+
+- **Live Portfolio:** https://anicia-clayton.github.io/linguallearn-portfolio/
+- **GitHub Repository:** https://github.com/Anicia-Clayton/linguallearn-portfolio
+- **Documentation:** Solution Architecture Document, ADRs, and operational runbooks available in portfolio
+
+---
+
+## License
+
+This project is for portfolio demonstration purposes.
+
+**Built by Anicia Clayton** - Cloud Data Engineer exploring MLOps and production ML infrastructure.
