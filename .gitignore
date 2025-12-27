@@ -11,3 +11,5 @@ yarn-error.log*lambda/ml_layer_complete/
 lambda/ml_layer_minimal/ 
 lambda/*.zip 
 *.pkl 
+"*_base64.txt" 
+"*.b64" 
