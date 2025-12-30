@@ -207,7 +207,6 @@ linguallearn-portfolio/                 # Project root
 │   ├── app.py                          # Flask/FastAPI application
 │   ├── models/                         # ML models
 │   │   ├── forgetting_curve.py         # Forgetting curve prediction model
-│   │   └── churn_detection.py          # Churn detection model
 │   │   └── requirements-ml.txt         # Python dependencies
 │   ├── routes/                         # API routes
 │   │   ├── users.py                    # User management endpoints
@@ -215,9 +214,6 @@ linguallearn-portfolio/                 # Project root
 │   │   ├── practice.py                 # Practice activity tracking
 │   │   ├── asl_vocabulary.py           # ASL vocabulary CRUD endpoints
 │   │   └── predictions.py              # ML prediction endpoints
-│   └── utils/                          # Utility functions
-│       ├── ankideck_client.py          # AnkiDeck API integration
-│       └── db_connection.py            # Database connection pooling
 │
 ├── tests/                              # Test scripts
 │   ├── test_api.sh                     # Comprehensive API Testing
@@ -249,7 +245,7 @@ Comprehensive development management with automated progress tracking.
 - Phase 1 (Infrastructure): 100%
 - Phase 2 (API & Compute): 100%
 - Phase 3 (Multi-Modal Activities): 100%
-- Phase 4 (ML Integration): ~75%
+- Phase 4 (ML Integration): ~90%
 - Phase 5 (Monitoring): 0%
 - Phase 6 (CI/CD): 0%
 

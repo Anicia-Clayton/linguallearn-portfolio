@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import sys
 import os
+import datetime
 
 # Add parent directory to path to import api modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -105,9 +106,19 @@ def train_and_save_model():
     print("\n" + "="*60)
     print("STEP 3: Saving Model to Disk")
     print("="*60)
-    model_filename = 'forgetting_curve_v1.pkl'
-    model.save(model_filename)
-    print(f"✅ Model saved to: {model_filename}")
+
+    # Generate version timestamp
+    version = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    versioned_filename = f'forgetting_curve_{version}.pkl'
+    latest_filename = 'forgetting_curve_latest.pkl'
+
+    # Save versioned model
+    model.save(versioned_filename)
+    print(f"✅ Saved versioned model: {versioned_filename}")
+
+    # Save as "latest" (overwrites previous for Lambda to use)
+    model.save(latest_filename)
+    print(f"✅ Saved latest model: {latest_filename}")
 
     # Test predictions
     print("\n" + "="*60)
@@ -141,9 +152,12 @@ def train_and_save_model():
     print("✅ Training Complete!")
     print("="*60)
     print(f"\nNext steps:")
-    print(f"1. Upload model to S3:")
-    print(f"   aws s3 cp {model_filename} s3://<DATA_LAKE_BUCKET>/models/")
-    print(f"2. Continue to Lambda ML Inference")
+    print(f"1. Upload versioned model to S3:")
+    print(f"   aws s3 cp {versioned_filename} s3://<DATA_LAKE_BUCKET>/models")
+    print(f"2. Upload latest model to S3:")
+    print(f"   aws s3 cp {latest_filename} s3://<DATA_LAKE_BUCKET>/models")
+    print(f"3. Verify uploads:")
+    print(f"   aws s3 ls s3://<DATA_LAKE_BUCKET>/models")
 
     return model, r2_score
 
