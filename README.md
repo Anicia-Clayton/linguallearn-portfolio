@@ -2,7 +2,7 @@
 
 Cloud-native ML platform demonstrating end-to-end infrastructure deployment, security architecture, and operational excellence for AI-powered applications.
 
-**Tech Stack:** AWS (VPC, EC2, RDS, Lambda, S3, CloudFront, ALB), Terraform, Python, FastAPI, PostgreSQL
+**Tech Stack:** AWS (VPC, EC2, RDS, Lambda, S3, CloudFront, ALB), Terraform, Python, FastAPI, PostgreSQL)
 
 **Live Documentation:** https://anicia-clayton.github.io/linguallearn-portfolio/
 
@@ -16,13 +16,13 @@ Cloud-native ML platform demonstrating end-to-end infrastructure deployment, sec
 
 **Technical Focus:** While the application domain is language learning, the primary demonstration is **MLOps and cloud infrastructure engineering** - deployment automation, security architecture, monitoring strategies, and operational best practices for ML systems.
 
-**Current Progress:** Phase 4 of 6.
+**Current Progress:** Phase 5 of 6.
 
-Infrastructure, API layer, and multi-modal tracking are live.
+Infrastructure, API layer, multi-modal tracking, & ML layer are live.
 
-Currently implementing ML integration.
+Currently implementing monitoring & secuirty hardening.
 
-Next phases: monitoring and CI/CD automation.
+Next phases: CI/CD automation.
 
 ---
 
@@ -95,6 +95,27 @@ Next phases: monitoring and CI/CD automation.
   - SSM connectivity
   - Git workflows
   - Lambda optimization
+
+---
+
+## Security
+
+LinguaLearn AI implements security best practices appropriate for a production ML platform:
+
+### Infrastructure Security
+- **Network Isolation:** Private subnets for compute and database tiers
+- **Encryption:** TLS in transit (ALB), AES-256 at rest (S3, RDS)
+- **IAM Least Privilege:** Scoped policies, function-specific Lambda roles
+- **No Unnecessary Exposure:** SSM Session Manager instead of SSH, S3 public access blocks
+
+### Application Security
+- **Input Validation:** Pydantic models with type constraints and bounds
+- **Error Handling:** Correlation-ID-based responses, no information leakage
+- **Connection Safety:** Context managers with guaranteed cleanup
+- **Rate Limiting:** Tiered limits to prevent abuse
+
+### Known Limitations
+Authentication is documented but not implemented—this portfolio project focuses on MLOps infrastructure rather than security engineering. See docs/SECURITY_CONSIDERATIONS.md for documented solutions.
 
 ---
 
@@ -173,6 +194,13 @@ linguallearn-portfolio/                 # Project root
 │       ├── ssm-connectivity.md
 │       ├── git-nested-repo.md
 │       ├── lambda-ml-layer-optimization.md
+│   ├── ml_model_training.md            # ML Model Training Details
+│   └── code-quality/                   # Detailed code quality updates
+│       ├── connection-pool-management.md
+│       ├── error-handling-patterns.md
+│       ├── ml-model-evaluation.md
+│       ├── infrastructure-security-hardening.md
+│   ├── security-considerations.md      # Known Secuirty Limitations + Fixes
 │
 ├── public/                             # Public assets
 │   └── index.html                      # HTML entry point
