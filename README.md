@@ -20,7 +20,7 @@ Cloud-native ML platform demonstrating end-to-end infrastructure deployment, sec
 
 Infrastructure, API layer, multi-modal tracking, & ML layer are live.
 
-Currently implementing monitoring & secuirty hardening.
+Currently implementing monitoring & security hardening.
 
 Next phases: CI/CD automation.
 
@@ -188,19 +188,19 @@ linguallearn-portfolio/                 # Project root
 │   ├── SAD.md                          # Solution Architecture Document (portfolio site)
 │   ├── RUNBOOK.md                      # Operations guide (portfolio site)
 │   ├── ADRs.md                         # Architecture Decision Records (1-6 are on portfolio site)
-│   ├── Project_Tracker.xlsx            # Complete Project Tracker
+│   ├── PROJECT_TRACKER.xlsx            # Complete Project Tracker
 │   ├── TROUBLESHOOTING.md              # Quick reference guide
 │   └── lessons-learned/                # Detailed troubleshooting stories
 │       ├── ssm-connectivity.md
 │       ├── git-nested-repo.md
 │       ├── lambda-ml-layer-optimization.md
-│   ├── ml_model_training.md            # ML Model Training Details
+│   ├── ml-model-training.md            # ML Model Training Details
 │   └── code-quality/                   # Detailed code quality updates
 │       ├── connection-pool-management.md
 │       ├── error-handling-patterns.md
 │       ├── ml-model-evaluation.md
 │       ├── infrastructure-security-hardening.md
-│   ├── security-considerations.md      # Known Secuirty Limitations + Fixes
+│   ├── SECURITY-CONSIDERATIONS.md      # Known Secuirty Limitations + Fixes
 │
 ├── public/                             # Public assets
 │   └── index.html                      # HTML entry point
