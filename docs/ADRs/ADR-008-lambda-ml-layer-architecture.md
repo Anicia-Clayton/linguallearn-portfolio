@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Date:** December 12, 2024  
-**Deciders:** Ace (Cloud Data Engineer / AI Engineer)  
+**Deciders:** Anicia Clayton (Cloud Data Engineer / ML Engineer)  
 **Context:** Week 4, Day 2 - Deploying forgetting curve ML model for serverless inference
 
 ---
